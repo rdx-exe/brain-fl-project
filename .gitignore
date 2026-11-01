@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+
+# Environment
+.env
+.env.*
+
+# Raw and processed medical data
+data/raw/
+data/extracted/
+data/processed/
+
+# Experiment outputs
+results/
+logs/
+*.pth
+*.pt
+*.ckpt
+
+# OS
+.DS_Store

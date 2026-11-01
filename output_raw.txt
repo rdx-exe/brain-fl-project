@@ -1,0 +1,625 @@
+Found 12 archives.
+
+=================================================================
+ARCHIVE: oasis_cross-sectional_disc1.tar.gz
+=================================================================
+Total entries: 1755
+Files: 1442
+Directories: 313
+
+File extensions:
+.gif                 382
+.hdr                 304
+.img                 304
+[no extension]       257
+.lst                 78
+.txt                 78
+.xml                 39
+
+First 30 archive entries:
+disc1
+disc1/OAS1_0001_MR1
+disc1/OAS1_0001_MR1/RAW
+disc1/OAS1_0001_MR1/RAW/OAS1_0001_MR1_mpr-3_anon.hdr
+disc1/OAS1_0001_MR1/RAW/OAS1_0001_MR1_mpr-4_anon.hdr
+disc1/OAS1_0001_MR1/RAW/OAS1_0001_MR1_mpr-3_anon.img
+disc1/OAS1_0001_MR1/RAW/OAS1_0001_MR1_mpr-1_anon.img
+disc1/OAS1_0001_MR1/RAW/OAS1_0001_MR1_mpr-4_anon.img
+disc1/OAS1_0001_MR1/RAW/OAS1_0001_MR1_mpr-2_anon.img
+disc1/OAS1_0001_MR1/RAW/OAS1_0001_MR1_mpr-2_anon.hdr
+disc1/OAS1_0001_MR1/RAW/OAS1_0001_MR1_mpr-1_anon.hdr
+disc1/OAS1_0001_MR1/RAW/OAS1_0001_MR1_mpr-3_anon_sag_66.gif
+disc1/OAS1_0001_MR1/RAW/OAS1_0001_MR1_mpr-1_anon_sag_66.gif
+disc1/OAS1_0001_MR1/RAW/OAS1_0001_MR1_mpr-4_anon_sag_66.gif
+disc1/OAS1_0001_MR1/RAW/OAS1_0001_MR1_mpr-2_anon_sag_66.gif
+disc1/OAS1_0001_MR1/PROCESSED
+disc1/OAS1_0001_MR1/PROCESSED/MPRAGE
+disc1/OAS1_0001_MR1/PROCESSED/MPRAGE/T88_111
+disc1/OAS1_0001_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0001_MR1_mpr_n4_anon_111_t88_gfc.img
+disc1/OAS1_0001_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0001_MR1_mpr_n4_anon_111_t88_gfc.hdr
+disc1/OAS1_0001_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0001_MR1_mpr_n4_anon_111_t88_masked_gfc.hdr
+disc1/OAS1_0001_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0001_MR1_mpr_n4_anon_111_t88_gfc_cor_110.gif
+disc1/OAS1_0001_MR1/PROCESSED/MPRAGE/T88_111/t4_files
+disc1/OAS1_0001_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0001_MR1_mpr-1_anon_to_711-2C_t4
+disc1/OAS1_0001_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0001_MR1_mpr-4_anon_to_711-2C_t4
+disc1/OAS1_0001_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0001_MR1_mpr-2_anon_to_OAS1_0001_MR1_mpr-1_anon_t4
+disc1/OAS1_0001_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0001_MR1_mpr-4_anon_to_OAS1_0001_MR1_mpr-1_anon_t4
+disc1/OAS1_0001_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0001_MR1_mpr-3_anon_to_711-2C_t4
+disc1/OAS1_0001_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0001_MR1_mpr-2_anon_to_711-2C_t4
+disc1/OAS1_0001_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0001_MR1_mpr-3_anon_to_OAS1_0001_MR1_mpr-1_anon_t4
+
+Potential MRI files:
+
+Total NIfTI files: 0
+
+=================================================================
+ARCHIVE: oasis_cross-sectional_disc10.tar.gz
+=================================================================
+Total entries: 1596
+Files: 1315
+Directories: 281
+
+File extensions:
+.gif                 347
+.hdr                 277
+.img                 277
+[no extension]       239
+.lst                 70
+.txt                 70
+.xml                 35
+
+First 30 archive entries:
+disc10
+disc10/OAS1_0349_MR1
+disc10/OAS1_0349_MR1/RAW
+disc10/OAS1_0349_MR1/RAW/OAS1_0349_MR1_mpr-4_anon.hdr
+disc10/OAS1_0349_MR1/RAW/OAS1_0349_MR1_mpr-1_anon.img
+disc10/OAS1_0349_MR1/RAW/OAS1_0349_MR1_mpr-2_anon.img
+disc10/OAS1_0349_MR1/RAW/OAS1_0349_MR1_mpr-4_anon.img
+disc10/OAS1_0349_MR1/RAW/OAS1_0349_MR1_mpr-3_anon.img
+disc10/OAS1_0349_MR1/RAW/OAS1_0349_MR1_mpr-3_anon.hdr
+disc10/OAS1_0349_MR1/RAW/OAS1_0349_MR1_mpr-2_anon.hdr
+disc10/OAS1_0349_MR1/RAW/OAS1_0349_MR1_mpr-1_anon.hdr
+disc10/OAS1_0349_MR1/RAW/OAS1_0349_MR1_mpr-1_anon_sag_66.gif
+disc10/OAS1_0349_MR1/RAW/OAS1_0349_MR1_mpr-2_anon_sag_66.gif
+disc10/OAS1_0349_MR1/RAW/OAS1_0349_MR1_mpr-4_anon_sag_66.gif
+disc10/OAS1_0349_MR1/RAW/OAS1_0349_MR1_mpr-3_anon_sag_66.gif
+disc10/OAS1_0349_MR1/PROCESSED
+disc10/OAS1_0349_MR1/PROCESSED/MPRAGE
+disc10/OAS1_0349_MR1/PROCESSED/MPRAGE/T88_111
+disc10/OAS1_0349_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0349_MR1_mpr_n4_anon_111_t88_gfc.img
+disc10/OAS1_0349_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0349_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+disc10/OAS1_0349_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0349_MR1_mpr_n4_anon_111_t88_gfc.hdr
+disc10/OAS1_0349_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0349_MR1_mpr_n4_anon_111_t88_masked_gfc.hdr
+disc10/OAS1_0349_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0349_MR1_mpr_n4_anon_111_t88_gfc_cor_110.gif
+disc10/OAS1_0349_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0349_MR1_mpr_n4_anon_111_t88_gfc_sag_95.gif
+disc10/OAS1_0349_MR1/PROCESSED/MPRAGE/T88_111/t4_files
+disc10/OAS1_0349_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0349_MR1_mpr-2_anon_to_711-2C_t4
+disc10/OAS1_0349_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0349_MR1_mpr-3_anon_to_711-2C_t4
+disc10/OAS1_0349_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0349_MR1_mpr-4_anon_to_711-2C_t4
+disc10/OAS1_0349_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0349_MR1_mpr-3_anon_to_OAS1_0349_MR1_mpr-1_anon_t4
+disc10/OAS1_0349_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0349_MR1_mpr-2_anon_to_OAS1_0349_MR1_mpr-1_anon_t4
+
+Potential MRI files:
+
+Total NIfTI files: 0
+
+=================================================================
+ARCHIVE: oasis_cross-sectional_disc11.tar.gz
+=================================================================
+Total entries: 1555
+Files: 1282
+Directories: 273
+
+File extensions:
+.gif                 338
+.hdr                 270
+.img                 270
+[no extension]       234
+.lst                 68
+.txt                 68
+.xml                 34
+
+First 30 archive entries:
+disc11
+disc11/OAS1_0383_MR1
+disc11/OAS1_0383_MR1/RAW
+disc11/OAS1_0383_MR1/RAW/OAS1_0383_MR1_mpr-4_anon.hdr
+disc11/OAS1_0383_MR1/RAW/OAS1_0383_MR1_mpr-2_anon.hdr
+disc11/OAS1_0383_MR1/RAW/OAS1_0383_MR1_mpr-1_anon.img
+disc11/OAS1_0383_MR1/RAW/OAS1_0383_MR1_mpr-2_anon.img
+disc11/OAS1_0383_MR1/RAW/OAS1_0383_MR1_mpr-3_anon.img
+disc11/OAS1_0383_MR1/RAW/OAS1_0383_MR1_mpr-3_anon.hdr
+disc11/OAS1_0383_MR1/RAW/OAS1_0383_MR1_mpr-1_anon.hdr
+disc11/OAS1_0383_MR1/RAW/OAS1_0383_MR1_mpr-4_anon.img
+disc11/OAS1_0383_MR1/RAW/OAS1_0383_MR1_mpr-1_anon_sag_66.gif
+disc11/OAS1_0383_MR1/RAW/OAS1_0383_MR1_mpr-2_anon_sag_66.gif
+disc11/OAS1_0383_MR1/RAW/OAS1_0383_MR1_mpr-3_anon_sag_66.gif
+disc11/OAS1_0383_MR1/RAW/OAS1_0383_MR1_mpr-4_anon_sag_66.gif
+disc11/OAS1_0383_MR1/PROCESSED
+disc11/OAS1_0383_MR1/PROCESSED/MPRAGE
+disc11/OAS1_0383_MR1/PROCESSED/MPRAGE/T88_111
+disc11/OAS1_0383_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0383_MR1_mpr_n4_anon_111_t88_gfc.img
+disc11/OAS1_0383_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0383_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+disc11/OAS1_0383_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0383_MR1_mpr_n4_anon_111_t88_gfc.hdr
+disc11/OAS1_0383_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0383_MR1_mpr_n4_anon_111_t88_masked_gfc.hdr
+disc11/OAS1_0383_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0383_MR1_mpr_n4_anon_111_t88_gfc_cor_110.gif
+disc11/OAS1_0383_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0383_MR1_mpr_n4_anon_111_t88_gfc_sag_95.gif
+disc11/OAS1_0383_MR1/PROCESSED/MPRAGE/T88_111/t4_files
+disc11/OAS1_0383_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0383_MR1_mpr-3_anon_to_711-2C_t4
+disc11/OAS1_0383_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0383_MR1_mpr-4_anon_to_711-2C_t4
+disc11/OAS1_0383_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0383_MR1_mpr-1_anon_to_711-2C_t4
+disc11/OAS1_0383_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0383_MR1_mpr-2_anon_to_OAS1_0383_MR1_mpr-1_anon_t4
+disc11/OAS1_0383_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0383_MR1_mpr-4_anon_to_OAS1_0383_MR1_mpr-1_anon_t4
+
+Potential MRI files:
+
+Total NIfTI files: 0
+
+=================================================================
+ARCHIVE: oasis_cross-sectional_disc12.tar.gz
+=================================================================
+Total entries: 1608
+Files: 1319
+Directories: 289
+
+File extensions:
+.gif                 350
+.img                 278
+.hdr                 278
+[no extension]       233
+.lst                 72
+.txt                 72
+.xml                 36
+
+First 30 archive entries:
+disc12
+disc12/OAS1_0420_MR1
+disc12/OAS1_0420_MR1/RAW
+disc12/OAS1_0420_MR1/RAW/OAS1_0420_MR1_mpr-4_anon.img
+disc12/OAS1_0420_MR1/RAW/OAS1_0420_MR1_mpr-2_anon.hdr
+disc12/OAS1_0420_MR1/RAW/OAS1_0420_MR1_mpr-2_anon.img
+disc12/OAS1_0420_MR1/RAW/OAS1_0420_MR1_mpr-1_anon.img
+disc12/OAS1_0420_MR1/RAW/OAS1_0420_MR1_mpr-3_anon.img
+disc12/OAS1_0420_MR1/RAW/OAS1_0420_MR1_mpr-3_anon.hdr
+disc12/OAS1_0420_MR1/RAW/OAS1_0420_MR1_mpr-4_anon.hdr
+disc12/OAS1_0420_MR1/RAW/OAS1_0420_MR1_mpr-1_anon.hdr
+disc12/OAS1_0420_MR1/RAW/OAS1_0420_MR1_mpr-4_anon_sag_66.gif
+disc12/OAS1_0420_MR1/RAW/OAS1_0420_MR1_mpr-2_anon_sag_66.gif
+disc12/OAS1_0420_MR1/RAW/OAS1_0420_MR1_mpr-1_anon_sag_66.gif
+disc12/OAS1_0420_MR1/RAW/OAS1_0420_MR1_mpr-3_anon_sag_66.gif
+disc12/OAS1_0420_MR1/PROCESSED
+disc12/OAS1_0420_MR1/PROCESSED/MPRAGE
+disc12/OAS1_0420_MR1/PROCESSED/MPRAGE/T88_111
+disc12/OAS1_0420_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0420_MR1_mpr_n4_anon_111_t88_gfc.img
+disc12/OAS1_0420_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0420_MR1_mpr_n4_anon_111_t88_gfc.hdr
+disc12/OAS1_0420_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0420_MR1_mpr_n4_anon_111_t88_masked_gfc.hdr
+disc12/OAS1_0420_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0420_MR1_mpr_n4_anon_111_t88_gfc_cor_110.gif
+disc12/OAS1_0420_MR1/PROCESSED/MPRAGE/T88_111/t4_files
+disc12/OAS1_0420_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0420_MR1_mpr-4_anon_to_711-2C_t4
+disc12/OAS1_0420_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0420_MR1_mpr-2_anon_to_711-2C_t4
+disc12/OAS1_0420_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0420_MR1_mpr-1_anon_to_711-2C_t4
+disc12/OAS1_0420_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0420_MR1_mpr-3_anon_to_711-2C_t4
+disc12/OAS1_0420_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0420_MR1_mpr-2_anon_to_OAS1_0420_MR1_mpr-1_anon_t4
+disc12/OAS1_0420_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0420_MR1_mpr-3_anon_to_OAS1_0420_MR1_mpr-1_anon_t4
+disc12/OAS1_0420_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0420_MR1_mpr-4_anon_to_OAS1_0420_MR1_mpr-1_anon_t4
+
+Potential MRI files:
+
+Total NIfTI files: 0
+
+=================================================================
+ARCHIVE: oasis_cross-sectional_disc2.tar.gz
+=================================================================
+Total entries: 1739
+Files: 1434
+Directories: 305
+
+File extensions:
+.gif                 378
+.img                 302
+.hdr                 302
+[no extension]       262
+.lst                 76
+.txt                 76
+.xml                 38
+
+First 30 archive entries:
+disc2
+disc2/OAS1_0043_MR1
+disc2/OAS1_0043_MR1/RAW
+disc2/OAS1_0043_MR1/RAW/OAS1_0043_MR1_mpr-4_anon.img
+disc2/OAS1_0043_MR1/RAW/OAS1_0043_MR1_mpr-1_anon.img
+disc2/OAS1_0043_MR1/RAW/OAS1_0043_MR1_mpr-3_anon.img
+disc2/OAS1_0043_MR1/RAW/OAS1_0043_MR1_mpr-3_anon.hdr
+disc2/OAS1_0043_MR1/RAW/OAS1_0043_MR1_mpr-2_anon.img
+disc2/OAS1_0043_MR1/RAW/OAS1_0043_MR1_mpr-2_anon.hdr
+disc2/OAS1_0043_MR1/RAW/OAS1_0043_MR1_mpr-4_anon.hdr
+disc2/OAS1_0043_MR1/RAW/OAS1_0043_MR1_mpr-1_anon.hdr
+disc2/OAS1_0043_MR1/RAW/OAS1_0043_MR1_mpr-4_anon_sag_66.gif
+disc2/OAS1_0043_MR1/RAW/OAS1_0043_MR1_mpr-1_anon_sag_66.gif
+disc2/OAS1_0043_MR1/RAW/OAS1_0043_MR1_mpr-3_anon_sag_66.gif
+disc2/OAS1_0043_MR1/RAW/OAS1_0043_MR1_mpr-2_anon_sag_66.gif
+disc2/OAS1_0043_MR1/PROCESSED
+disc2/OAS1_0043_MR1/PROCESSED/MPRAGE
+disc2/OAS1_0043_MR1/PROCESSED/MPRAGE/T88_111
+disc2/OAS1_0043_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0043_MR1_mpr_n4_anon_111_t88_gfc.img
+disc2/OAS1_0043_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0043_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+disc2/OAS1_0043_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0043_MR1_mpr_n4_anon_111_t88_gfc.hdr
+disc2/OAS1_0043_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0043_MR1_mpr_n4_anon_111_t88_masked_gfc.hdr
+disc2/OAS1_0043_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0043_MR1_mpr_n4_anon_111_t88_gfc_cor_110.gif
+disc2/OAS1_0043_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0043_MR1_mpr_n4_anon_111_t88_gfc_sag_95.gif
+disc2/OAS1_0043_MR1/PROCESSED/MPRAGE/T88_111/t4_files
+disc2/OAS1_0043_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0043_MR1_mpr-4_anon_to_711-2C_t4
+disc2/OAS1_0043_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0043_MR1_mpr-3_anon_to_711-2C_t4
+disc2/OAS1_0043_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0043_MR1_mpr-1_anon_to_711-2C_t4
+disc2/OAS1_0043_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0043_MR1_mpr-3_anon_to_OAS1_0043_MR1_mpr-1_anon_t4
+disc2/OAS1_0043_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0043_MR1_mpr-2_anon_to_OAS1_0043_MR1_mpr-1_anon_t4
+
+Potential MRI files:
+
+Total NIfTI files: 0
+
+=================================================================
+ARCHIVE: oasis_cross-sectional_disc3.tar.gz
+=================================================================
+Total entries: 1641
+Files: 1352
+Directories: 289
+
+File extensions:
+.gif                 356
+.hdr                 284
+.img                 284
+[no extension]       248
+.lst                 72
+.txt                 72
+.xml                 36
+
+First 30 archive entries:
+disc3
+disc3/OAS1_0081_MR1
+disc3/OAS1_0081_MR1/RAW
+disc3/OAS1_0081_MR1/RAW/OAS1_0081_MR1_mpr-3_anon.hdr
+disc3/OAS1_0081_MR1/RAW/OAS1_0081_MR1_mpr-2_anon.hdr
+disc3/OAS1_0081_MR1/RAW/OAS1_0081_MR1_mpr-2_anon.img
+disc3/OAS1_0081_MR1/RAW/OAS1_0081_MR1_mpr-1_anon.img
+disc3/OAS1_0081_MR1/RAW/OAS1_0081_MR1_mpr-1_anon.hdr
+disc3/OAS1_0081_MR1/RAW/OAS1_0081_MR1_mpr-3_anon.img
+disc3/OAS1_0081_MR1/RAW/OAS1_0081_MR1_mpr-2_anon_sag_66.gif
+disc3/OAS1_0081_MR1/RAW/OAS1_0081_MR1_mpr-1_anon_sag_66.gif
+disc3/OAS1_0081_MR1/RAW/OAS1_0081_MR1_mpr-3_anon_sag_66.gif
+disc3/OAS1_0081_MR1/PROCESSED
+disc3/OAS1_0081_MR1/PROCESSED/MPRAGE
+disc3/OAS1_0081_MR1/PROCESSED/MPRAGE/T88_111
+disc3/OAS1_0081_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0081_MR1_mpr_n3_anon_111_t88_gfc.img
+disc3/OAS1_0081_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0081_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+disc3/OAS1_0081_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0081_MR1_mpr_n3_anon_111_t88_gfc.hdr
+disc3/OAS1_0081_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0081_MR1_mpr_n3_anon_111_t88_masked_gfc.hdr
+disc3/OAS1_0081_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0081_MR1_mpr_n3_anon_111_t88_gfc_cor_110.gif
+disc3/OAS1_0081_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0081_MR1_mpr_n3_anon_111_t88_gfc_sag_95.gif
+disc3/OAS1_0081_MR1/PROCESSED/MPRAGE/T88_111/t4_files
+disc3/OAS1_0081_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0081_MR1_mpr-1_anon_to_711-2C_t4
+disc3/OAS1_0081_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0081_MR1_mpr-2_anon_to_711-2C_t4
+disc3/OAS1_0081_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0081_MR1_mpr-3_anon_to_OAS1_0081_MR1_mpr-1_anon_t4
+disc3/OAS1_0081_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0081_MR1_mpr-3_anon_to_711-2C_t4
+disc3/OAS1_0081_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0081_MR1_mpr-2_anon_to_OAS1_0081_MR1_mpr-1_anon_t4
+disc3/OAS1_0081_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0081_MR1_mpr_n3_anon_111_t88_gfc_tra_90.gif
+disc3/OAS1_0081_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0081_MR1_mpr_n3_anon_111_t88_masked_gfc_tra_90.gif
+disc3/OAS1_0081_MR1/PROCESSED/MPRAGE/SUBJ_111
+
+Potential MRI files:
+
+Total NIfTI files: 0
+
+=================================================================
+ARCHIVE: oasis_cross-sectional_disc4.tar.gz
+=================================================================
+Total entries: 1576
+Files: 1295
+Directories: 281
+
+File extensions:
+.gif                 343
+.hdr                 273
+.img                 273
+[no extension]       231
+.lst                 70
+.txt                 70
+.xml                 35
+
+First 30 archive entries:
+disc4
+disc4/OAS1_0116_MR1
+disc4/OAS1_0116_MR1/RAW
+disc4/OAS1_0116_MR1/RAW/OAS1_0116_MR1_mpr-3_anon.hdr
+disc4/OAS1_0116_MR1/RAW/OAS1_0116_MR1_mpr-2_anon.hdr
+disc4/OAS1_0116_MR1/RAW/OAS1_0116_MR1_mpr-1_anon.hdr
+disc4/OAS1_0116_MR1/RAW/OAS1_0116_MR1_mpr-1_anon.img
+disc4/OAS1_0116_MR1/RAW/OAS1_0116_MR1_mpr-2_anon.img
+disc4/OAS1_0116_MR1/RAW/OAS1_0116_MR1_mpr-3_anon.img
+disc4/OAS1_0116_MR1/RAW/OAS1_0116_MR1_mpr-1_anon_sag_66.gif
+disc4/OAS1_0116_MR1/RAW/OAS1_0116_MR1_mpr-2_anon_sag_66.gif
+disc4/OAS1_0116_MR1/RAW/OAS1_0116_MR1_mpr-3_anon_sag_66.gif
+disc4/OAS1_0116_MR1/PROCESSED
+disc4/OAS1_0116_MR1/PROCESSED/MPRAGE
+disc4/OAS1_0116_MR1/PROCESSED/MPRAGE/T88_111
+disc4/OAS1_0116_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0116_MR1_mpr_n3_anon_111_t88_gfc.img
+disc4/OAS1_0116_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0116_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+disc4/OAS1_0116_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0116_MR1_mpr_n3_anon_111_t88_gfc.hdr
+disc4/OAS1_0116_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0116_MR1_mpr_n3_anon_111_t88_masked_gfc.hdr
+disc4/OAS1_0116_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0116_MR1_mpr_n3_anon_111_t88_gfc_cor_110.gif
+disc4/OAS1_0116_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0116_MR1_mpr_n3_anon_111_t88_gfc_sag_95.gif
+disc4/OAS1_0116_MR1/PROCESSED/MPRAGE/T88_111/t4_files
+disc4/OAS1_0116_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0116_MR1_mpr-3_anon_to_711-2C_t4
+disc4/OAS1_0116_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0116_MR1_mpr-1_anon_to_711-2C_t4
+disc4/OAS1_0116_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0116_MR1_mpr-2_anon_to_OAS1_0116_MR1_mpr-1_anon_t4
+disc4/OAS1_0116_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0116_MR1_mpr-2_anon_to_711-2C_t4
+disc4/OAS1_0116_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0116_MR1_mpr-3_anon_to_OAS1_0116_MR1_mpr-1_anon_t4
+disc4/OAS1_0116_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0116_MR1_mpr_n3_anon_111_t88_gfc_tra_90.gif
+disc4/OAS1_0116_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0116_MR1_mpr_n3_anon_111_t88_masked_gfc_tra_90.gif
+disc4/OAS1_0116_MR1/PROCESSED/MPRAGE/SUBJ_111
+
+Potential MRI files:
+
+Total NIfTI files: 0
+
+=================================================================
+ARCHIVE: oasis_cross-sectional_disc5.tar.gz
+=================================================================
+Total entries: 1724
+Files: 1419
+Directories: 305
+
+File extensions:
+.gif                 375
+.img                 299
+.hdr                 299
+[no extension]       256
+.lst                 76
+.txt                 76
+.xml                 38
+
+First 30 archive entries:
+disc5
+disc5/OAS1_0151_MR1
+disc5/OAS1_0151_MR1/RAW
+disc5/OAS1_0151_MR1/RAW/OAS1_0151_MR1_mpr-4_anon.img
+disc5/OAS1_0151_MR1/RAW/OAS1_0151_MR1_mpr-1_anon.img
+disc5/OAS1_0151_MR1/RAW/OAS1_0151_MR1_mpr-2_anon.hdr
+disc5/OAS1_0151_MR1/RAW/OAS1_0151_MR1_mpr-1_anon.hdr
+disc5/OAS1_0151_MR1/RAW/OAS1_0151_MR1_mpr-2_anon.img
+disc5/OAS1_0151_MR1/RAW/OAS1_0151_MR1_mpr-4_anon.hdr
+disc5/OAS1_0151_MR1/RAW/OAS1_0151_MR1_mpr-3_anon.img
+disc5/OAS1_0151_MR1/RAW/OAS1_0151_MR1_mpr-3_anon.hdr
+disc5/OAS1_0151_MR1/RAW/OAS1_0151_MR1_mpr-4_anon_sag_66.gif
+disc5/OAS1_0151_MR1/RAW/OAS1_0151_MR1_mpr-1_anon_sag_66.gif
+disc5/OAS1_0151_MR1/RAW/OAS1_0151_MR1_mpr-2_anon_sag_66.gif
+disc5/OAS1_0151_MR1/RAW/OAS1_0151_MR1_mpr-3_anon_sag_66.gif
+disc5/OAS1_0151_MR1/PROCESSED
+disc5/OAS1_0151_MR1/PROCESSED/MPRAGE
+disc5/OAS1_0151_MR1/PROCESSED/MPRAGE/T88_111
+disc5/OAS1_0151_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0151_MR1_mpr_n4_anon_111_t88_gfc.img
+disc5/OAS1_0151_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0151_MR1_mpr_n4_anon_111_t88_gfc.hdr
+disc5/OAS1_0151_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0151_MR1_mpr_n4_anon_111_t88_masked_gfc.hdr
+disc5/OAS1_0151_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0151_MR1_mpr_n4_anon_111_t88_gfc_cor_110.gif
+disc5/OAS1_0151_MR1/PROCESSED/MPRAGE/T88_111/t4_files
+disc5/OAS1_0151_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0151_MR1_mpr-4_anon_to_OAS1_0151_MR1_mpr-1_anon_t4
+disc5/OAS1_0151_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0151_MR1_mpr-4_anon_to_711-2C_t4
+disc5/OAS1_0151_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0151_MR1_mpr-2_anon_to_OAS1_0151_MR1_mpr-1_anon_t4
+disc5/OAS1_0151_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0151_MR1_mpr-2_anon_to_711-2C_t4
+disc5/OAS1_0151_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0151_MR1_mpr-3_anon_to_711-2C_t4
+disc5/OAS1_0151_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0151_MR1_mpr-1_anon_to_711-2C_t4
+disc5/OAS1_0151_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0151_MR1_mpr-3_anon_to_OAS1_0151_MR1_mpr-1_anon_t4
+
+Potential MRI files:
+
+Total NIfTI files: 0
+
+=================================================================
+ARCHIVE: oasis_cross-sectional_disc6.tar.gz
+=================================================================
+Total entries: 1673
+Files: 1376
+Directories: 297
+
+File extensions:
+.gif                 364
+.img                 290
+.hdr                 290
+[no extension]       247
+.lst                 74
+.txt                 74
+.xml                 37
+
+First 30 archive entries:
+disc6
+disc6/OAS1_0192_MR1
+disc6/OAS1_0192_MR1/RAW
+disc6/OAS1_0192_MR1/RAW/OAS1_0192_MR1_mpr-3_anon.img
+disc6/OAS1_0192_MR1/RAW/OAS1_0192_MR1_mpr-2_anon.img
+disc6/OAS1_0192_MR1/RAW/OAS1_0192_MR1_mpr-2_anon.hdr
+disc6/OAS1_0192_MR1/RAW/OAS1_0192_MR1_mpr-3_anon.hdr
+disc6/OAS1_0192_MR1/RAW/OAS1_0192_MR1_mpr-1_anon.img
+disc6/OAS1_0192_MR1/RAW/OAS1_0192_MR1_mpr-1_anon.hdr
+disc6/OAS1_0192_MR1/RAW/OAS1_0192_MR1_mpr-3_anon_sag_66.gif
+disc6/OAS1_0192_MR1/RAW/OAS1_0192_MR1_mpr-2_anon_sag_66.gif
+disc6/OAS1_0192_MR1/RAW/OAS1_0192_MR1_mpr-1_anon_sag_66.gif
+disc6/OAS1_0192_MR1/PROCESSED
+disc6/OAS1_0192_MR1/PROCESSED/MPRAGE
+disc6/OAS1_0192_MR1/PROCESSED/MPRAGE/T88_111
+disc6/OAS1_0192_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0192_MR1_mpr_n3_anon_111_t88_gfc.img
+disc6/OAS1_0192_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0192_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+disc6/OAS1_0192_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0192_MR1_mpr_n3_anon_111_t88_gfc.hdr
+disc6/OAS1_0192_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0192_MR1_mpr_n3_anon_111_t88_masked_gfc.hdr
+disc6/OAS1_0192_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0192_MR1_mpr_n3_anon_111_t88_gfc_cor_110.gif
+disc6/OAS1_0192_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0192_MR1_mpr_n3_anon_111_t88_gfc_sag_95.gif
+disc6/OAS1_0192_MR1/PROCESSED/MPRAGE/T88_111/t4_files
+disc6/OAS1_0192_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0192_MR1_mpr-1_anon_to_711-2C_t4
+disc6/OAS1_0192_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0192_MR1_mpr-2_anon_to_711-2C_t4
+disc6/OAS1_0192_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0192_MR1_mpr-2_anon_to_OAS1_0192_MR1_mpr-1_anon_t4
+disc6/OAS1_0192_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0192_MR1_mpr-3_anon_to_711-2C_t4
+disc6/OAS1_0192_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0192_MR1_mpr-3_anon_to_OAS1_0192_MR1_mpr-1_anon_t4
+disc6/OAS1_0192_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0192_MR1_mpr_n3_anon_111_t88_gfc_tra_90.gif
+disc6/OAS1_0192_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0192_MR1_mpr_n3_anon_111_t88_masked_gfc_tra_90.gif
+disc6/OAS1_0192_MR1/PROCESSED/MPRAGE/SUBJ_111
+
+Potential MRI files:
+
+Total NIfTI files: 0
+
+=================================================================
+ARCHIVE: oasis_cross-sectional_disc7.tar.gz
+=================================================================
+Total entries: 1734
+Files: 1429
+Directories: 305
+
+File extensions:
+.gif                 377
+.img                 301
+.hdr                 301
+[no extension]       260
+.lst                 76
+.txt                 76
+.xml                 38
+
+First 30 archive entries:
+disc7
+disc7/OAS1_0232_MR1
+disc7/OAS1_0232_MR1/RAW
+disc7/OAS1_0232_MR1/RAW/OAS1_0232_MR1_mpr-3_anon.img
+disc7/OAS1_0232_MR1/RAW/OAS1_0232_MR1_mpr-3_anon.hdr
+disc7/OAS1_0232_MR1/RAW/OAS1_0232_MR1_mpr-2_anon.hdr
+disc7/OAS1_0232_MR1/RAW/OAS1_0232_MR1_mpr-1_anon.img
+disc7/OAS1_0232_MR1/RAW/OAS1_0232_MR1_mpr-4_anon.img
+disc7/OAS1_0232_MR1/RAW/OAS1_0232_MR1_mpr-4_anon.hdr
+disc7/OAS1_0232_MR1/RAW/OAS1_0232_MR1_mpr-2_anon.img
+disc7/OAS1_0232_MR1/RAW/OAS1_0232_MR1_mpr-1_anon.hdr
+disc7/OAS1_0232_MR1/RAW/OAS1_0232_MR1_mpr-3_anon_sag_66.gif
+disc7/OAS1_0232_MR1/RAW/OAS1_0232_MR1_mpr-1_anon_sag_66.gif
+disc7/OAS1_0232_MR1/RAW/OAS1_0232_MR1_mpr-4_anon_sag_66.gif
+disc7/OAS1_0232_MR1/RAW/OAS1_0232_MR1_mpr-2_anon_sag_66.gif
+disc7/OAS1_0232_MR1/PROCESSED
+disc7/OAS1_0232_MR1/PROCESSED/MPRAGE
+disc7/OAS1_0232_MR1/PROCESSED/MPRAGE/T88_111
+disc7/OAS1_0232_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0232_MR1_mpr_n4_anon_111_t88_gfc.img
+disc7/OAS1_0232_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0232_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+disc7/OAS1_0232_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0232_MR1_mpr_n4_anon_111_t88_gfc.hdr
+disc7/OAS1_0232_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0232_MR1_mpr_n4_anon_111_t88_masked_gfc.hdr
+disc7/OAS1_0232_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0232_MR1_mpr_n4_anon_111_t88_gfc_cor_110.gif
+disc7/OAS1_0232_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0232_MR1_mpr_n4_anon_111_t88_gfc_sag_95.gif
+disc7/OAS1_0232_MR1/PROCESSED/MPRAGE/T88_111/t4_files
+disc7/OAS1_0232_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0232_MR1_mpr-3_anon_to_711-2C_t4
+disc7/OAS1_0232_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0232_MR1_mpr-1_anon_to_711-2C_t4
+disc7/OAS1_0232_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0232_MR1_mpr-4_anon_to_711-2C_t4
+disc7/OAS1_0232_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0232_MR1_mpr-3_anon_to_OAS1_0232_MR1_mpr-1_anon_t4
+disc7/OAS1_0232_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0232_MR1_mpr-2_anon_to_OAS1_0232_MR1_mpr-1_anon_t4
+
+Potential MRI files:
+
+Total NIfTI files: 0
+
+=================================================================
+ARCHIVE: oasis_cross-sectional_disc8.tar.gz
+=================================================================
+Total entries: 1596
+Files: 1315
+Directories: 281
+
+File extensions:
+.gif                 347
+.hdr                 277
+.img                 277
+[no extension]       239
+.lst                 70
+.txt                 70
+.xml                 35
+
+First 30 archive entries:
+disc8
+disc8/OAS1_0273_MR1
+disc8/OAS1_0273_MR1/RAW
+disc8/OAS1_0273_MR1/RAW/OAS1_0273_MR1_mpr-3_anon.hdr
+disc8/OAS1_0273_MR1/RAW/OAS1_0273_MR1_mpr-1_anon.img
+disc8/OAS1_0273_MR1/RAW/OAS1_0273_MR1_mpr-3_anon.img
+disc8/OAS1_0273_MR1/RAW/OAS1_0273_MR1_mpr-2_anon.img
+disc8/OAS1_0273_MR1/RAW/OAS1_0273_MR1_mpr-2_anon.hdr
+disc8/OAS1_0273_MR1/RAW/OAS1_0273_MR1_mpr-1_anon.hdr
+disc8/OAS1_0273_MR1/RAW/OAS1_0273_MR1_mpr-1_anon_sag_66.gif
+disc8/OAS1_0273_MR1/RAW/OAS1_0273_MR1_mpr-3_anon_sag_66.gif
+disc8/OAS1_0273_MR1/RAW/OAS1_0273_MR1_mpr-2_anon_sag_66.gif
+disc8/OAS1_0273_MR1/PROCESSED
+disc8/OAS1_0273_MR1/PROCESSED/MPRAGE
+disc8/OAS1_0273_MR1/PROCESSED/MPRAGE/T88_111
+disc8/OAS1_0273_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0273_MR1_mpr_n3_anon_111_t88_gfc.img
+disc8/OAS1_0273_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0273_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+disc8/OAS1_0273_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0273_MR1_mpr_n3_anon_111_t88_gfc.hdr
+disc8/OAS1_0273_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0273_MR1_mpr_n3_anon_111_t88_masked_gfc.hdr
+disc8/OAS1_0273_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0273_MR1_mpr_n3_anon_111_t88_gfc_cor_110.gif
+disc8/OAS1_0273_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0273_MR1_mpr_n3_anon_111_t88_gfc_sag_95.gif
+disc8/OAS1_0273_MR1/PROCESSED/MPRAGE/T88_111/t4_files
+disc8/OAS1_0273_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0273_MR1_mpr-1_anon_to_711-2C_t4
+disc8/OAS1_0273_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0273_MR1_mpr-3_anon_to_711-2C_t4
+disc8/OAS1_0273_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0273_MR1_mpr-2_anon_to_OAS1_0273_MR1_mpr-1_anon_t4
+disc8/OAS1_0273_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0273_MR1_mpr-2_anon_to_711-2C_t4
+disc8/OAS1_0273_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0273_MR1_mpr-3_anon_to_OAS1_0273_MR1_mpr-1_anon_t4
+disc8/OAS1_0273_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0273_MR1_mpr_n3_anon_111_t88_gfc_tra_90.gif
+disc8/OAS1_0273_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0273_MR1_mpr_n3_anon_111_t88_masked_gfc_tra_90.gif
+disc8/OAS1_0273_MR1/PROCESSED/MPRAGE/SUBJ_111
+
+Potential MRI files:
+
+Total NIfTI files: 0
+
+=================================================================
+ARCHIVE: oasis_cross-sectional_disc9.tar.gz
+=================================================================
+Total entries: 1596
+Files: 1315
+Directories: 281
+
+File extensions:
+.gif                 347
+.img                 277
+.hdr                 277
+[no extension]       239
+.lst                 70
+.txt                 70
+.xml                 35
+
+First 30 archive entries:
+disc9
+disc9/OAS1_0310_MR1
+disc9/OAS1_0310_MR1/RAW
+disc9/OAS1_0310_MR1/RAW/OAS1_0310_MR1_mpr-4_anon.img
+disc9/OAS1_0310_MR1/RAW/OAS1_0310_MR1_mpr-2_anon.hdr
+disc9/OAS1_0310_MR1/RAW/OAS1_0310_MR1_mpr-2_anon.img
+disc9/OAS1_0310_MR1/RAW/OAS1_0310_MR1_mpr-1_anon.img
+disc9/OAS1_0310_MR1/RAW/OAS1_0310_MR1_mpr-3_anon.img
+disc9/OAS1_0310_MR1/RAW/OAS1_0310_MR1_mpr-3_anon.hdr
+disc9/OAS1_0310_MR1/RAW/OAS1_0310_MR1_mpr-4_anon.hdr
+disc9/OAS1_0310_MR1/RAW/OAS1_0310_MR1_mpr-1_anon.hdr
+disc9/OAS1_0310_MR1/RAW/OAS1_0310_MR1_mpr-4_anon_sag_66.gif
+disc9/OAS1_0310_MR1/RAW/OAS1_0310_MR1_mpr-2_anon_sag_66.gif
+disc9/OAS1_0310_MR1/RAW/OAS1_0310_MR1_mpr-1_anon_sag_66.gif
+disc9/OAS1_0310_MR1/RAW/OAS1_0310_MR1_mpr-3_anon_sag_66.gif
+disc9/OAS1_0310_MR1/PROCESSED
+disc9/OAS1_0310_MR1/PROCESSED/MPRAGE
+disc9/OAS1_0310_MR1/PROCESSED/MPRAGE/T88_111
+disc9/OAS1_0310_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0310_MR1_mpr_n4_anon_111_t88_gfc.img
+disc9/OAS1_0310_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0310_MR1_mpr_n4_anon_111_t88_gfc.hdr
+disc9/OAS1_0310_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0310_MR1_mpr_n4_anon_111_t88_masked_gfc.hdr
+disc9/OAS1_0310_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0310_MR1_mpr_n4_anon_111_t88_gfc_cor_110.gif
+disc9/OAS1_0310_MR1/PROCESSED/MPRAGE/T88_111/t4_files
+disc9/OAS1_0310_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0310_MR1_mpr-4_anon_to_711-2C_t4
+disc9/OAS1_0310_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0310_MR1_mpr-2_anon_to_711-2C_t4
+disc9/OAS1_0310_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0310_MR1_mpr-1_anon_to_711-2C_t4
+disc9/OAS1_0310_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0310_MR1_mpr-3_anon_to_711-2C_t4
+disc9/OAS1_0310_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0310_MR1_mpr-2_anon_to_OAS1_0310_MR1_mpr-1_anon_t4
+disc9/OAS1_0310_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0310_MR1_mpr-3_anon_to_OAS1_0310_MR1_mpr-1_anon_t4
+disc9/OAS1_0310_MR1/PROCESSED/MPRAGE/T88_111/t4_files/OAS1_0310_MR1_mpr-4_anon_to_OAS1_0310_MR1_mpr-1_anon_t4
+
+Potential MRI files:
+
+Total NIfTI files: 0
