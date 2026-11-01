@@ -1,0 +1,634 @@
+=================================================================
+OASIS-1 ANALYZE PAIR INSPECTION
+=================================================================
+
+Archive directory: /home/rdx/Documents/Projects/brain-fl-project/data/raw/archives
+Archives found: 12
+
+[1/12] Inspecting: oasis_cross-sectional_disc1.tar.gz
+
+Inspecting: oasis_cross-sectional_disc1.tar.gz
+Analyze .img files: 304
+Complete .img/.hdr pairs: 304
+Unpaired .img files: 0
+
+RAW: 148 paired images
+  disc1/OAS1_0001_MR1/RAW/OAS1_0001_MR1_mpr-3_anon.img
+  disc1/OAS1_0001_MR1/RAW/OAS1_0001_MR1_mpr-1_anon.img
+  disc1/OAS1_0001_MR1/RAW/OAS1_0001_MR1_mpr-4_anon.img
+  disc1/OAS1_0001_MR1/RAW/OAS1_0001_MR1_mpr-2_anon.img
+  disc1/OAS1_0002_MR1/RAW/OAS1_0002_MR1_mpr-4_anon.img
+
+T88_111: 78 paired images
+  disc1/OAS1_0001_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0001_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc1/OAS1_0001_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0001_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc1/OAS1_0002_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0002_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc1/OAS1_0002_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0002_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc1/OAS1_0003_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0003_MR1_mpr_n4_anon_111_t88_gfc.img
+
+SUBJ_111: 39 paired images
+  disc1/OAS1_0001_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0001_MR1_mpr_n4_anon_sbj_111.img
+  disc1/OAS1_0002_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0002_MR1_mpr_n4_anon_sbj_111.img
+  disc1/OAS1_0003_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0003_MR1_mpr_n4_anon_sbj_111.img
+  disc1/OAS1_0004_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0004_MR1_mpr_n4_anon_sbj_111.img
+  disc1/OAS1_0005_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0005_MR1_mpr_n4_anon_sbj_111.img
+
+Potential processed GFC images:
+  disc1/OAS1_0001_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0001_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc1/OAS1_0001_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0001_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc1/OAS1_0002_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0002_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc1/OAS1_0002_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0002_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc1/OAS1_0003_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0003_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc1/OAS1_0003_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0003_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc1/OAS1_0004_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0004_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc1/OAS1_0004_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0004_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc1/OAS1_0005_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0005_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc1/OAS1_0005_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0005_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+
+Potential masked GFC images:
+  disc1/OAS1_0001_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0001_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc1/OAS1_0002_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0002_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc1/OAS1_0003_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0003_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc1/OAS1_0004_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0004_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc1/OAS1_0005_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0005_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc1/OAS1_0006_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0006_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc1/OAS1_0007_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0007_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+  disc1/OAS1_0009_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0009_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc1/OAS1_0010_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0010_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc1/OAS1_0011_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0011_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+
+[2/12] Inspecting: oasis_cross-sectional_disc10.tar.gz
+
+Inspecting: oasis_cross-sectional_disc10.tar.gz
+Analyze .img files: 277
+Complete .img/.hdr pairs: 277
+Unpaired .img files: 0
+
+RAW: 137 paired images
+  disc10/OAS1_0349_MR1/RAW/OAS1_0349_MR1_mpr-1_anon.img
+  disc10/OAS1_0349_MR1/RAW/OAS1_0349_MR1_mpr-2_anon.img
+  disc10/OAS1_0349_MR1/RAW/OAS1_0349_MR1_mpr-4_anon.img
+  disc10/OAS1_0349_MR1/RAW/OAS1_0349_MR1_mpr-3_anon.img
+  disc10/OAS1_0350_MR1/RAW/OAS1_0350_MR1_mpr-3_anon.img
+
+T88_111: 70 paired images
+  disc10/OAS1_0349_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0349_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc10/OAS1_0349_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0349_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc10/OAS1_0350_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0350_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc10/OAS1_0350_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0350_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc10/OAS1_0351_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0351_MR1_mpr_n4_anon_111_t88_gfc.img
+
+SUBJ_111: 35 paired images
+  disc10/OAS1_0349_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0349_MR1_mpr_n4_anon_sbj_111.img
+  disc10/OAS1_0350_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0350_MR1_mpr_n4_anon_sbj_111.img
+  disc10/OAS1_0351_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0351_MR1_mpr_n4_anon_sbj_111.img
+  disc10/OAS1_0352_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0352_MR1_mpr_n3_anon_sbj_111.img
+  disc10/OAS1_0353_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0353_MR1_mpr_n4_anon_sbj_111.img
+
+Potential processed GFC images:
+  disc10/OAS1_0349_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0349_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc10/OAS1_0349_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0349_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc10/OAS1_0350_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0350_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc10/OAS1_0350_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0350_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc10/OAS1_0351_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0351_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc10/OAS1_0351_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0351_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc10/OAS1_0352_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0352_MR1_mpr_n3_anon_111_t88_gfc.img
+  disc10/OAS1_0352_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0352_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+  disc10/OAS1_0353_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0353_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc10/OAS1_0353_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0353_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+
+Potential masked GFC images:
+  disc10/OAS1_0349_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0349_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc10/OAS1_0350_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0350_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc10/OAS1_0351_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0351_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc10/OAS1_0352_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0352_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+  disc10/OAS1_0353_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0353_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc10/OAS1_0353_MR2/PROCESSED/MPRAGE/T88_111/OAS1_0353_MR2_mpr_n4_anon_111_t88_masked_gfc.img
+  disc10/OAS1_0354_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0354_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc10/OAS1_0355_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0355_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc10/OAS1_0356_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0356_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc10/OAS1_0357_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0357_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+
+[3/12] Inspecting: oasis_cross-sectional_disc11.tar.gz
+
+Inspecting: oasis_cross-sectional_disc11.tar.gz
+Analyze .img files: 270
+Complete .img/.hdr pairs: 270
+Unpaired .img files: 0
+
+RAW: 134 paired images
+  disc11/OAS1_0383_MR1/RAW/OAS1_0383_MR1_mpr-1_anon.img
+  disc11/OAS1_0383_MR1/RAW/OAS1_0383_MR1_mpr-2_anon.img
+  disc11/OAS1_0383_MR1/RAW/OAS1_0383_MR1_mpr-3_anon.img
+  disc11/OAS1_0383_MR1/RAW/OAS1_0383_MR1_mpr-4_anon.img
+  disc11/OAS1_0384_MR1/RAW/OAS1_0384_MR1_mpr-2_anon.img
+
+T88_111: 68 paired images
+  disc11/OAS1_0383_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0383_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc11/OAS1_0383_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0383_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc11/OAS1_0384_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0384_MR1_mpr_n3_anon_111_t88_gfc.img
+  disc11/OAS1_0384_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0384_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+  disc11/OAS1_0385_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0385_MR1_mpr_n4_anon_111_t88_gfc.img
+
+SUBJ_111: 34 paired images
+  disc11/OAS1_0383_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0383_MR1_mpr_n4_anon_sbj_111.img
+  disc11/OAS1_0384_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0384_MR1_mpr_n3_anon_sbj_111.img
+  disc11/OAS1_0385_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0385_MR1_mpr_n4_anon_sbj_111.img
+  disc11/OAS1_0386_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0386_MR1_mpr_n4_anon_sbj_111.img
+  disc11/OAS1_0387_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0387_MR1_mpr_n4_anon_sbj_111.img
+
+Potential processed GFC images:
+  disc11/OAS1_0383_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0383_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc11/OAS1_0383_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0383_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc11/OAS1_0384_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0384_MR1_mpr_n3_anon_111_t88_gfc.img
+  disc11/OAS1_0384_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0384_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+  disc11/OAS1_0385_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0385_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc11/OAS1_0385_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0385_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc11/OAS1_0386_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0386_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc11/OAS1_0386_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0386_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc11/OAS1_0387_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0387_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc11/OAS1_0387_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0387_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+
+Potential masked GFC images:
+  disc11/OAS1_0383_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0383_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc11/OAS1_0384_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0384_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+  disc11/OAS1_0385_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0385_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc11/OAS1_0386_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0386_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc11/OAS1_0387_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0387_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc11/OAS1_0388_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0388_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc11/OAS1_0389_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0389_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc11/OAS1_0390_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0390_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc11/OAS1_0392_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0392_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc11/OAS1_0394_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0394_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+
+[4/12] Inspecting: oasis_cross-sectional_disc12.tar.gz
+
+Inspecting: oasis_cross-sectional_disc12.tar.gz
+Analyze .img files: 278
+Complete .img/.hdr pairs: 278
+Unpaired .img files: 0
+
+RAW: 134 paired images
+  disc12/OAS1_0420_MR1/RAW/OAS1_0420_MR1_mpr-4_anon.img
+  disc12/OAS1_0420_MR1/RAW/OAS1_0420_MR1_mpr-2_anon.img
+  disc12/OAS1_0420_MR1/RAW/OAS1_0420_MR1_mpr-1_anon.img
+  disc12/OAS1_0420_MR1/RAW/OAS1_0420_MR1_mpr-3_anon.img
+  disc12/OAS1_0421_MR1/RAW/OAS1_0421_MR1_mpr-4_anon.img
+
+T88_111: 72 paired images
+  disc12/OAS1_0420_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0420_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc12/OAS1_0420_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0420_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc12/OAS1_0421_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0421_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc12/OAS1_0421_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0421_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc12/OAS1_0422_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0422_MR1_mpr_n4_anon_111_t88_gfc.img
+
+SUBJ_111: 36 paired images
+  disc12/OAS1_0420_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0420_MR1_mpr_n4_anon_sbj_111.img
+  disc12/OAS1_0421_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0421_MR1_mpr_n4_anon_sbj_111.img
+  disc12/OAS1_0422_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0422_MR1_mpr_n4_anon_sbj_111.img
+  disc12/OAS1_0423_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0423_MR1_mpr_n3_anon_sbj_111.img
+  disc12/OAS1_0424_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0424_MR1_mpr_n4_anon_sbj_111.img
+
+Potential processed GFC images:
+  disc12/OAS1_0420_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0420_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc12/OAS1_0420_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0420_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc12/OAS1_0421_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0421_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc12/OAS1_0421_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0421_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc12/OAS1_0422_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0422_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc12/OAS1_0422_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0422_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc12/OAS1_0423_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0423_MR1_mpr_n3_anon_111_t88_gfc.img
+  disc12/OAS1_0423_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0423_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+  disc12/OAS1_0424_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0424_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc12/OAS1_0424_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0424_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+
+Potential masked GFC images:
+  disc12/OAS1_0420_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0420_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc12/OAS1_0421_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0421_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc12/OAS1_0422_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0422_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc12/OAS1_0423_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0423_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+  disc12/OAS1_0424_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0424_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc12/OAS1_0425_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0425_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc12/OAS1_0426_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0426_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc12/OAS1_0428_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0428_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc12/OAS1_0429_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0429_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc12/OAS1_0430_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0430_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+
+[5/12] Inspecting: oasis_cross-sectional_disc2.tar.gz
+
+Inspecting: oasis_cross-sectional_disc2.tar.gz
+Analyze .img files: 302
+Complete .img/.hdr pairs: 302
+Unpaired .img files: 0
+
+RAW: 150 paired images
+  disc2/OAS1_0043_MR1/RAW/OAS1_0043_MR1_mpr-4_anon.img
+  disc2/OAS1_0043_MR1/RAW/OAS1_0043_MR1_mpr-1_anon.img
+  disc2/OAS1_0043_MR1/RAW/OAS1_0043_MR1_mpr-3_anon.img
+  disc2/OAS1_0043_MR1/RAW/OAS1_0043_MR1_mpr-2_anon.img
+  disc2/OAS1_0044_MR1/RAW/OAS1_0044_MR1_mpr-4_anon.img
+
+T88_111: 76 paired images
+  disc2/OAS1_0043_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0043_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc2/OAS1_0043_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0043_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc2/OAS1_0044_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0044_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc2/OAS1_0044_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0044_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc2/OAS1_0045_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0045_MR1_mpr_n4_anon_111_t88_gfc.img
+
+SUBJ_111: 38 paired images
+  disc2/OAS1_0043_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0043_MR1_mpr_n4_anon_sbj_111.img
+  disc2/OAS1_0044_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0044_MR1_mpr_n4_anon_sbj_111.img
+  disc2/OAS1_0045_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0045_MR1_mpr_n4_anon_sbj_111.img
+  disc2/OAS1_0046_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0046_MR1_mpr_n4_anon_sbj_111.img
+  disc2/OAS1_0047_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0047_MR1_mpr_n4_anon_sbj_111.img
+
+Potential processed GFC images:
+  disc2/OAS1_0043_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0043_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc2/OAS1_0043_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0043_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc2/OAS1_0044_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0044_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc2/OAS1_0044_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0044_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc2/OAS1_0045_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0045_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc2/OAS1_0045_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0045_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc2/OAS1_0046_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0046_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc2/OAS1_0046_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0046_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc2/OAS1_0047_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0047_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc2/OAS1_0047_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0047_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+
+Potential masked GFC images:
+  disc2/OAS1_0043_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0043_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc2/OAS1_0044_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0044_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc2/OAS1_0045_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0045_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc2/OAS1_0046_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0046_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc2/OAS1_0047_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0047_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc2/OAS1_0049_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0049_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc2/OAS1_0050_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0050_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc2/OAS1_0051_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0051_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc2/OAS1_0052_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0052_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc2/OAS1_0053_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0053_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+
+[6/12] Inspecting: oasis_cross-sectional_disc3.tar.gz
+
+Inspecting: oasis_cross-sectional_disc3.tar.gz
+Analyze .img files: 284
+Complete .img/.hdr pairs: 284
+Unpaired .img files: 0
+
+RAW: 140 paired images
+  disc3/OAS1_0081_MR1/RAW/OAS1_0081_MR1_mpr-2_anon.img
+  disc3/OAS1_0081_MR1/RAW/OAS1_0081_MR1_mpr-1_anon.img
+  disc3/OAS1_0081_MR1/RAW/OAS1_0081_MR1_mpr-3_anon.img
+  disc3/OAS1_0082_MR1/RAW/OAS1_0082_MR1_mpr-1_anon.img
+  disc3/OAS1_0082_MR1/RAW/OAS1_0082_MR1_mpr-3_anon.img
+
+T88_111: 72 paired images
+  disc3/OAS1_0081_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0081_MR1_mpr_n3_anon_111_t88_gfc.img
+  disc3/OAS1_0081_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0081_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+  disc3/OAS1_0082_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0082_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc3/OAS1_0082_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0082_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc3/OAS1_0083_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0083_MR1_mpr_n4_anon_111_t88_gfc.img
+
+SUBJ_111: 36 paired images
+  disc3/OAS1_0081_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0081_MR1_mpr_n3_anon_sbj_111.img
+  disc3/OAS1_0082_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0082_MR1_mpr_n4_anon_sbj_111.img
+  disc3/OAS1_0083_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0083_MR1_mpr_n4_anon_sbj_111.img
+  disc3/OAS1_0084_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0084_MR1_mpr_n4_anon_sbj_111.img
+  disc3/OAS1_0085_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0085_MR1_mpr_n4_anon_sbj_111.img
+
+Potential processed GFC images:
+  disc3/OAS1_0081_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0081_MR1_mpr_n3_anon_111_t88_gfc.img
+  disc3/OAS1_0081_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0081_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+  disc3/OAS1_0082_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0082_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc3/OAS1_0082_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0082_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc3/OAS1_0083_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0083_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc3/OAS1_0083_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0083_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc3/OAS1_0084_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0084_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc3/OAS1_0084_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0084_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc3/OAS1_0085_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0085_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc3/OAS1_0085_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0085_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+
+Potential masked GFC images:
+  disc3/OAS1_0081_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0081_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+  disc3/OAS1_0082_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0082_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc3/OAS1_0083_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0083_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc3/OAS1_0084_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0084_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc3/OAS1_0085_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0085_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc3/OAS1_0086_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0086_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc3/OAS1_0087_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0087_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc3/OAS1_0088_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0088_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc3/OAS1_0090_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0090_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc3/OAS1_0091_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0091_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+
+[7/12] Inspecting: oasis_cross-sectional_disc4.tar.gz
+
+Inspecting: oasis_cross-sectional_disc4.tar.gz
+Analyze .img files: 273
+Complete .img/.hdr pairs: 273
+Unpaired .img files: 0
+
+RAW: 133 paired images
+  disc4/OAS1_0116_MR1/RAW/OAS1_0116_MR1_mpr-1_anon.img
+  disc4/OAS1_0116_MR1/RAW/OAS1_0116_MR1_mpr-2_anon.img
+  disc4/OAS1_0116_MR1/RAW/OAS1_0116_MR1_mpr-3_anon.img
+  disc4/OAS1_0117_MR1/RAW/OAS1_0117_MR1_mpr-2_anon.img
+  disc4/OAS1_0117_MR1/RAW/OAS1_0117_MR1_mpr-1_anon.img
+
+T88_111: 70 paired images
+  disc4/OAS1_0116_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0116_MR1_mpr_n3_anon_111_t88_gfc.img
+  disc4/OAS1_0116_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0116_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+  disc4/OAS1_0117_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0117_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc4/OAS1_0117_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0117_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc4/OAS1_0117_MR2/PROCESSED/MPRAGE/T88_111/OAS1_0117_MR2_mpr_n4_anon_111_t88_gfc.img
+
+SUBJ_111: 35 paired images
+  disc4/OAS1_0116_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0116_MR1_mpr_n3_anon_sbj_111.img
+  disc4/OAS1_0117_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0117_MR1_mpr_n4_anon_sbj_111.img
+  disc4/OAS1_0117_MR2/PROCESSED/MPRAGE/SUBJ_111/OAS1_0117_MR2_mpr_n4_anon_sbj_111.img
+  disc4/OAS1_0119_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0119_MR1_mpr_n3_anon_sbj_111.img
+  disc4/OAS1_0120_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0120_MR1_mpr_n4_anon_sbj_111.img
+
+Potential processed GFC images:
+  disc4/OAS1_0116_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0116_MR1_mpr_n3_anon_111_t88_gfc.img
+  disc4/OAS1_0116_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0116_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+  disc4/OAS1_0117_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0117_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc4/OAS1_0117_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0117_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc4/OAS1_0117_MR2/PROCESSED/MPRAGE/T88_111/OAS1_0117_MR2_mpr_n4_anon_111_t88_gfc.img
+  disc4/OAS1_0117_MR2/PROCESSED/MPRAGE/T88_111/OAS1_0117_MR2_mpr_n4_anon_111_t88_masked_gfc.img
+  disc4/OAS1_0119_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0119_MR1_mpr_n3_anon_111_t88_gfc.img
+  disc4/OAS1_0119_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0119_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+  disc4/OAS1_0120_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0120_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc4/OAS1_0120_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0120_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+
+Potential masked GFC images:
+  disc4/OAS1_0116_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0116_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+  disc4/OAS1_0117_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0117_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc4/OAS1_0117_MR2/PROCESSED/MPRAGE/T88_111/OAS1_0117_MR2_mpr_n4_anon_111_t88_masked_gfc.img
+  disc4/OAS1_0119_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0119_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+  disc4/OAS1_0120_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0120_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc4/OAS1_0121_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0121_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc4/OAS1_0122_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0122_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc4/OAS1_0123_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0123_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc4/OAS1_0124_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0124_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc4/OAS1_0125_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0125_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+
+[8/12] Inspecting: oasis_cross-sectional_disc5.tar.gz
+
+Inspecting: oasis_cross-sectional_disc5.tar.gz
+Analyze .img files: 299
+Complete .img/.hdr pairs: 299
+Unpaired .img files: 0
+
+RAW: 147 paired images
+  disc5/OAS1_0151_MR1/RAW/OAS1_0151_MR1_mpr-4_anon.img
+  disc5/OAS1_0151_MR1/RAW/OAS1_0151_MR1_mpr-1_anon.img
+  disc5/OAS1_0151_MR1/RAW/OAS1_0151_MR1_mpr-2_anon.img
+  disc5/OAS1_0151_MR1/RAW/OAS1_0151_MR1_mpr-3_anon.img
+  disc5/OAS1_0152_MR1/RAW/OAS1_0152_MR1_mpr-3_anon.img
+
+T88_111: 76 paired images
+  disc5/OAS1_0151_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0151_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc5/OAS1_0151_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0151_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc5/OAS1_0152_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0152_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc5/OAS1_0152_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0152_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc5/OAS1_0153_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0153_MR1_mpr_n4_anon_111_t88_gfc.img
+
+SUBJ_111: 38 paired images
+  disc5/OAS1_0151_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0151_MR1_mpr_n4_anon_sbj_111.img
+  disc5/OAS1_0152_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0152_MR1_mpr_n4_anon_sbj_111.img
+  disc5/OAS1_0153_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0153_MR1_mpr_n4_anon_sbj_111.img
+  disc5/OAS1_0155_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0155_MR1_mpr_n4_anon_sbj_111.img
+  disc5/OAS1_0156_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0156_MR1_mpr_n4_anon_sbj_111.img
+
+Potential processed GFC images:
+  disc5/OAS1_0151_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0151_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc5/OAS1_0151_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0151_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc5/OAS1_0152_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0152_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc5/OAS1_0152_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0152_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc5/OAS1_0153_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0153_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc5/OAS1_0153_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0153_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc5/OAS1_0155_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0155_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc5/OAS1_0155_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0155_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc5/OAS1_0156_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0156_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc5/OAS1_0156_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0156_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+
+Potential masked GFC images:
+  disc5/OAS1_0151_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0151_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc5/OAS1_0152_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0152_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc5/OAS1_0153_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0153_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc5/OAS1_0155_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0155_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc5/OAS1_0156_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0156_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc5/OAS1_0156_MR2/PROCESSED/MPRAGE/T88_111/OAS1_0156_MR2_mpr_n4_anon_111_t88_masked_gfc.img
+  disc5/OAS1_0157_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0157_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc5/OAS1_0158_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0158_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc5/OAS1_0159_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0159_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+  disc5/OAS1_0160_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0160_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+
+[9/12] Inspecting: oasis_cross-sectional_disc6.tar.gz
+
+Inspecting: oasis_cross-sectional_disc6.tar.gz
+Analyze .img files: 290
+Complete .img/.hdr pairs: 290
+Unpaired .img files: 0
+
+RAW: 142 paired images
+  disc6/OAS1_0192_MR1/RAW/OAS1_0192_MR1_mpr-3_anon.img
+  disc6/OAS1_0192_MR1/RAW/OAS1_0192_MR1_mpr-2_anon.img
+  disc6/OAS1_0192_MR1/RAW/OAS1_0192_MR1_mpr-1_anon.img
+  disc6/OAS1_0193_MR1/RAW/OAS1_0193_MR1_mpr-2_anon.img
+  disc6/OAS1_0193_MR1/RAW/OAS1_0193_MR1_mpr-4_anon.img
+
+T88_111: 74 paired images
+  disc6/OAS1_0192_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0192_MR1_mpr_n3_anon_111_t88_gfc.img
+  disc6/OAS1_0192_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0192_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+  disc6/OAS1_0193_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0193_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc6/OAS1_0193_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0193_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc6/OAS1_0195_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0195_MR1_mpr_n4_anon_111_t88_gfc.img
+
+SUBJ_111: 37 paired images
+  disc6/OAS1_0192_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0192_MR1_mpr_n3_anon_sbj_111.img
+  disc6/OAS1_0193_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0193_MR1_mpr_n4_anon_sbj_111.img
+  disc6/OAS1_0195_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0195_MR1_mpr_n4_anon_sbj_111.img
+  disc6/OAS1_0197_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0197_MR1_mpr_n4_anon_sbj_111.img
+  disc6/OAS1_0198_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0198_MR1_mpr_n4_fdcanon_sbj_111.4dfp.img
+
+Potential processed GFC images:
+  disc6/OAS1_0192_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0192_MR1_mpr_n3_anon_111_t88_gfc.img
+  disc6/OAS1_0192_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0192_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+  disc6/OAS1_0193_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0193_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc6/OAS1_0193_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0193_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc6/OAS1_0195_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0195_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc6/OAS1_0195_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0195_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc6/OAS1_0197_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0197_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc6/OAS1_0197_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0197_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc6/OAS1_0198_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0198_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc6/OAS1_0198_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0198_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+
+Potential masked GFC images:
+  disc6/OAS1_0192_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0192_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+  disc6/OAS1_0193_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0193_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc6/OAS1_0195_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0195_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc6/OAS1_0197_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0197_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc6/OAS1_0198_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0198_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc6/OAS1_0199_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0199_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+  disc6/OAS1_0200_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0200_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc6/OAS1_0201_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0201_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc6/OAS1_0202_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0202_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc6/OAS1_0202_MR2/PROCESSED/MPRAGE/T88_111/OAS1_0202_MR2_mpr_n4_anon_111_t88_masked_gfc.img
+
+[10/12] Inspecting: oasis_cross-sectional_disc7.tar.gz
+
+Inspecting: oasis_cross-sectional_disc7.tar.gz
+Analyze .img files: 301
+Complete .img/.hdr pairs: 301
+Unpaired .img files: 0
+
+RAW: 149 paired images
+  disc7/OAS1_0232_MR1/RAW/OAS1_0232_MR1_mpr-3_anon.img
+  disc7/OAS1_0232_MR1/RAW/OAS1_0232_MR1_mpr-1_anon.img
+  disc7/OAS1_0232_MR1/RAW/OAS1_0232_MR1_mpr-4_anon.img
+  disc7/OAS1_0232_MR1/RAW/OAS1_0232_MR1_mpr-2_anon.img
+  disc7/OAS1_0233_MR1/RAW/OAS1_0233_MR1_mpr-3_anon.img
+
+T88_111: 76 paired images
+  disc7/OAS1_0232_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0232_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc7/OAS1_0232_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0232_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc7/OAS1_0233_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0233_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc7/OAS1_0233_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0233_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc7/OAS1_0234_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0234_MR1_mpr_n4_anon_111_t88_gfc.img
+
+SUBJ_111: 38 paired images
+  disc7/OAS1_0232_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0232_MR1_mpr_n4_anon_sbj_111.img
+  disc7/OAS1_0233_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0233_MR1_mpr_n4_anon_sbj_111.img
+  disc7/OAS1_0234_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0234_MR1_mpr_n4_anon_sbj_111.img
+  disc7/OAS1_0235_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0235_MR1_mpr_n3_anon_sbj_111.img
+  disc7/OAS1_0236_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0236_MR1_mpr_n4_anon_sbj_111.img
+
+Potential processed GFC images:
+  disc7/OAS1_0232_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0232_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc7/OAS1_0232_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0232_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc7/OAS1_0233_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0233_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc7/OAS1_0233_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0233_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc7/OAS1_0234_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0234_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc7/OAS1_0234_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0234_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc7/OAS1_0235_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0235_MR1_mpr_n3_anon_111_t88_gfc.img
+  disc7/OAS1_0235_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0235_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+  disc7/OAS1_0236_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0236_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc7/OAS1_0236_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0236_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+
+Potential masked GFC images:
+  disc7/OAS1_0232_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0232_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc7/OAS1_0233_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0233_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc7/OAS1_0234_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0234_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc7/OAS1_0235_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0235_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+  disc7/OAS1_0236_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0236_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc7/OAS1_0236_MR2/PROCESSED/MPRAGE/T88_111/OAS1_0236_MR2_mpr_n4_anon_111_t88_masked_gfc.img
+  disc7/OAS1_0237_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0237_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc7/OAS1_0238_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0238_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc7/OAS1_0239_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0239_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc7/OAS1_0239_MR2/PROCESSED/MPRAGE/T88_111/OAS1_0239_MR2_mpr_n4_anon_111_t88_masked_gfc.img
+
+[11/12] Inspecting: oasis_cross-sectional_disc8.tar.gz
+
+Inspecting: oasis_cross-sectional_disc8.tar.gz
+Analyze .img files: 277
+Complete .img/.hdr pairs: 277
+Unpaired .img files: 0
+
+RAW: 137 paired images
+  disc8/OAS1_0273_MR1/RAW/OAS1_0273_MR1_mpr-1_anon.img
+  disc8/OAS1_0273_MR1/RAW/OAS1_0273_MR1_mpr-3_anon.img
+  disc8/OAS1_0273_MR1/RAW/OAS1_0273_MR1_mpr-2_anon.img
+  disc8/OAS1_0274_MR1/RAW/OAS1_0274_MR1_mpr-4_anon.img
+  disc8/OAS1_0274_MR1/RAW/OAS1_0274_MR1_mpr-1_anon.img
+
+T88_111: 70 paired images
+  disc8/OAS1_0273_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0273_MR1_mpr_n3_anon_111_t88_gfc.img
+  disc8/OAS1_0273_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0273_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+  disc8/OAS1_0274_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0274_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc8/OAS1_0274_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0274_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc8/OAS1_0275_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0275_MR1_mpr_n4_anon_111_t88_gfc.img
+
+SUBJ_111: 35 paired images
+  disc8/OAS1_0273_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0273_MR1_mpr_n3_anon_sbj_111.img
+  disc8/OAS1_0274_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0274_MR1_mpr_n4_anon_sbj_111.img
+  disc8/OAS1_0275_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0275_MR1_mpr_n4_anon_sbj_111.img
+  disc8/OAS1_0277_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0277_MR1_mpr_n4_anon_sbj_111.img
+  disc8/OAS1_0278_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0278_MR1_mpr_n4_anon_sbj_111.img
+
+Potential processed GFC images:
+  disc8/OAS1_0273_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0273_MR1_mpr_n3_anon_111_t88_gfc.img
+  disc8/OAS1_0273_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0273_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+  disc8/OAS1_0274_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0274_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc8/OAS1_0274_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0274_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc8/OAS1_0275_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0275_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc8/OAS1_0275_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0275_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc8/OAS1_0277_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0277_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc8/OAS1_0277_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0277_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc8/OAS1_0278_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0278_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc8/OAS1_0278_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0278_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+
+Potential masked GFC images:
+  disc8/OAS1_0273_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0273_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+  disc8/OAS1_0274_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0274_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc8/OAS1_0275_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0275_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc8/OAS1_0277_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0277_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc8/OAS1_0278_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0278_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc8/OAS1_0279_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0279_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc8/OAS1_0280_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0280_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc8/OAS1_0281_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0281_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc8/OAS1_0282_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0282_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc8/OAS1_0283_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0283_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+
+[12/12] Inspecting: oasis_cross-sectional_disc9.tar.gz
+
+Inspecting: oasis_cross-sectional_disc9.tar.gz
+Analyze .img files: 277
+Complete .img/.hdr pairs: 277
+Unpaired .img files: 0
+
+RAW: 137 paired images
+  disc9/OAS1_0310_MR1/RAW/OAS1_0310_MR1_mpr-4_anon.img
+  disc9/OAS1_0310_MR1/RAW/OAS1_0310_MR1_mpr-2_anon.img
+  disc9/OAS1_0310_MR1/RAW/OAS1_0310_MR1_mpr-1_anon.img
+  disc9/OAS1_0310_MR1/RAW/OAS1_0310_MR1_mpr-3_anon.img
+  disc9/OAS1_0311_MR1/RAW/OAS1_0311_MR1_mpr-4_anon.img
+
+T88_111: 70 paired images
+  disc9/OAS1_0310_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0310_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc9/OAS1_0310_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0310_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc9/OAS1_0311_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0311_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc9/OAS1_0311_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0311_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc9/OAS1_0312_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0312_MR1_mpr_n4_anon_111_t88_gfc.img
+
+SUBJ_111: 35 paired images
+  disc9/OAS1_0310_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0310_MR1_mpr_n4_anon_sbj_111.img
+  disc9/OAS1_0311_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0311_MR1_mpr_n4_anon_sbj_111.img
+  disc9/OAS1_0312_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0312_MR1_mpr_n4_anon_sbj_111.img
+  disc9/OAS1_0313_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0313_MR1_mpr_n4_anon_sbj_111.img
+  disc9/OAS1_0314_MR1/PROCESSED/MPRAGE/SUBJ_111/OAS1_0314_MR1_mpr_n4_anon_sbj_111.img
+
+Potential processed GFC images:
+  disc9/OAS1_0310_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0310_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc9/OAS1_0310_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0310_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc9/OAS1_0311_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0311_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc9/OAS1_0311_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0311_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc9/OAS1_0312_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0312_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc9/OAS1_0312_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0312_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc9/OAS1_0313_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0313_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc9/OAS1_0313_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0313_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc9/OAS1_0314_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0314_MR1_mpr_n4_anon_111_t88_gfc.img
+  disc9/OAS1_0314_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0314_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+
+Potential masked GFC images:
+  disc9/OAS1_0310_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0310_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc9/OAS1_0311_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0311_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc9/OAS1_0312_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0312_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc9/OAS1_0313_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0313_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc9/OAS1_0314_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0314_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc9/OAS1_0315_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0315_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc9/OAS1_0316_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0316_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc9/OAS1_0317_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0317_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+  disc9/OAS1_0318_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0318_MR1_mpr_n3_anon_111_t88_masked_gfc.img
+  disc9/OAS1_0319_MR1/PROCESSED/MPRAGE/T88_111/OAS1_0319_MR1_mpr_n4_anon_111_t88_masked_gfc.img
+
+=================================================================
+ARCHIVE INSPECTION COMPLETED
+=================================================================

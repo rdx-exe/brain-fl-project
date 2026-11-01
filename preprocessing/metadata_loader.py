@@ -1,103 +1,92 @@
-
 import pandas as pd
 from pathlib import Path
 
 
 class OASISMetadataLoader:
 
-    def __init__(self, metadata_path):
-        self.metadata_path = Path(metadata_path)
+    def __init__(self, file_path):
+
+        self.file_path = Path(file_path)
         self.data = None
 
     def load(self):
 
-        if not self.metadata_path.exists():
-            raise FileNotFoundError(
-                f"Metadata file not found: {self.metadata_path}"
-            )
+        if not self.file_path.exists():
+            raise FileNotFoundError(self.file_path)
 
-        suffix = self.metadata_path.suffix.lower()
+        extension = self.file_path.suffix.lower()
 
-        # Load according to file format
-        if suffix == ".csv":
-            self.data = pd.read_csv(self.metadata_path)
+        if extension in [".xlsx", ".xls"]:
+            self.data = pd.read_excel(self.file_path)
 
-        elif suffix in [".xlsx", ".xls"]:
-            self.data = pd.read_excel(self.metadata_path)
+        elif extension == ".csv":
+            self.data = pd.read_csv(self.file_path)
 
         else:
             raise ValueError(
-                f"Unsupported metadata format: {suffix}"
+                f"Unsupported metadata format: {extension}"
             )
 
-        print("\nMetadata loaded successfully.")
-        print(f"File: {self.metadata_path.name}")
-        print(f"Records: {len(self.data)}")
-        print(f"Columns: {len(self.data.columns)}")
-
+        print("Metadata loaded:", self.file_path.name)
         return self.data
 
-    def inspect(self):
+    def validate_columns(self):
 
-        if self.data is None:
-            raise RuntimeError("Load metadata before inspection.")
+        required = ["ID", "Age", "CDR", "MMSE"]
 
-        print("\n" + "=" * 65)
-        print("METADATA STRUCTURE")
-        print("=" * 65)
-
-        print("\nDataset shape:")
-        print(self.data.shape)
-
-        print("\nColumn names:")
-        for column in self.data.columns:
-            print(f" - {column}")
-
-        print("\nFirst five records:")
-        print(self.data.head().to_string())
-
-        print("\nData types:")
-        print(self.data.dtypes)
-
-        print("\nMissing values:")
-        print(self.data.isnull().sum())
-
-    def inspect_clinical_columns(self):
-
-        if self.data is None:
-            raise RuntimeError("Load metadata before inspection.")
-
-        print("\n" + "=" * 65)
-        print("CLINICAL VARIABLE INSPECTION")
-        print("=" * 65)
-
-        # Identify potentially relevant clinical variables
-        keywords = [
-            "cdr",
-            "age",
-            "gender",
-            "educ",
-            "ses",
-            "mmse",
-            "hand",
-            "group",
-            "diagnosis"
+        missing = [
+            column for column in required
+            if column not in self.data.columns
         ]
 
-        clinical_columns = [
-            column for column in self.data.columns
-            if any(
-                keyword in str(column).lower()
-                for keyword in keywords
+        if missing:
+            raise ValueError(
+                f"Missing required columns: {missing}"
             )
-        ]
 
-        if not clinical_columns:
-            print("\nNo matching clinical columns found.")
-            return
+    def inspect_diagnosis(self):
 
-        for column in clinical_columns:
+        self.validate_columns()
 
-            print(f"\nColumn: {column}")
-            print(f"Unique values: {self.data[column].nunique(dropna=False)}")
-            print(self.data[column].value_counts(dropna=False).head(20))
+        print("\nCDR distribution:")
+        print(self.data["CDR"].value_counts(dropna=False).sort_index())
+
+        print("\nMMSE distribution:")
+        print(self.data["MMSE"].value_counts(dropna=False).sort_index())
+
+        print("\nRecords with missing CDR:")
+        print(self.data["CDR"].isna().sum())
+
+        print("\nRecords by MRI session:")
+        print(
+            self.data["ID"]
+            .astype(str)
+            .str.extract(r"(_MR\d+)$")[0]
+            .value_counts(dropna=False)
+        )
+
+    def create_audit_table(self):
+
+        self.validate_columns()
+
+        df = self.data.copy()
+
+        df["session_id"] = df["ID"].astype(str)
+
+        # Remove the MRI session suffix to obtain
+        # the participant-level identifier.
+        df["participant_id"] = (
+            df["session_id"]
+            .str.replace(r"_MR\d+$", "", regex=True)
+        )
+
+        df["label"] = pd.NA
+
+        df.loc[df["CDR"] == 0.0, "label"] = "CN"
+
+        df.loc[df["CDR"] > 0.0, "label"] = "Dementia"
+
+        # Keep unknown ratings separate.
+        df["label"] = df["label"].astype("string")
+
+        return df
