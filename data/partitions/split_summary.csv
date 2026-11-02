@@ -1,0 +1,4 @@
+split,total_participants,CN_count,CDR_positive_count,CN_percentage,CDR_positive_percentage
+train,164,94,70,57.32,42.68
+validation,35,20,15,57.14,42.86
+test,36,21,15,58.33,41.67
