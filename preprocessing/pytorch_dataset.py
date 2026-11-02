@@ -1,6 +1,5 @@
-
 from pathlib import Path
-from collections import OrderedDict
+from collections import OrderedDict, Counter
 
 import numpy as np
 import pandas as pd
@@ -25,21 +24,16 @@ REPORT_PATH = (
 )
 
 # Seven representative axial slices.
-# These are selected from the previously inspected MRI volumes.
 SELECTED_SLICES = [20, 40, 60, 78, 100, 120, 140]
 
 IMAGE_SIZE = 224
-
 BATCH_SIZE = 8
-
 NUM_WORKERS = 0
-
-# Small LRU cache to avoid repeatedly loading the same MRI volume.
 CACHE_SIZE = 2
 
 # Labels:
-# 0 = CDR 0 (non-demented)
-# 1 = CDR > 0 (CDR-positive dementia)
+# 0 = CDR 0 (cognitively normal)
+# 1 = CDR > 0 (CDR-positive)
 
 
 # ============================================================
@@ -72,14 +66,13 @@ def load_mri_volume(image_path):
         dtype=np.float32
     )
 
-    # Remove only a singleton fourth dimension.
     if volume.ndim == 4 and volume.shape[-1] == 1:
         volume = volume[..., 0]
 
     if volume.ndim != 3:
         raise ValueError(
-            f"Expected a 3D MRI volume or singleton-channel 4D volume. "
-            f"Received shape: {volume.shape}"
+            "Expected a 3D MRI volume or singleton-channel "
+            f"4D volume. Received shape: {volume.shape}"
         )
 
     if not np.isfinite(volume).all():
@@ -96,18 +89,14 @@ def load_mri_volume(image_path):
 
 def normalize_slice(slice_data):
     """
-    Normalize a single MRI slice.
+    Normalize one MRI slice.
 
-    Steps:
-        1. Convert to float32.
-        2. Identify non-zero voxels.
-        3. Calculate 1st and 99.5th percentiles.
-        4. Clip extreme intensity values.
-        5. Scale intensities to [0, 1].
-        6. Preserve the zero-valued background.
-
-    Returns:
-        Normalized 2D NumPy array.
+    Processing:
+        1. Identify non-zero voxels.
+        2. Calculate the 1st and 99.5th percentiles.
+        3. Clip extreme intensities.
+        4. Scale non-zero intensities to [0, 1].
+        5. Preserve zero-valued background.
     """
 
     slice_data = np.asarray(
@@ -127,15 +116,8 @@ def normalize_slice(slice_data):
 
     brain_values = slice_data[brain_mask]
 
-    lower = np.percentile(
-        brain_values,
-        1
-    )
-
-    upper = np.percentile(
-        brain_values,
-        99.5
-    )
+    lower = np.percentile(brain_values, 1)
+    upper = np.percentile(brain_values, 99.5)
 
     if upper <= lower:
         return normalized
@@ -170,29 +152,63 @@ class OASISSliceDataset(Dataset):
     ):
 
         self.report_path = Path(report_path)
-
         self.split = split
-
-        self.selected_slices = (
-            selected_slices
-            if selected_slices is not None
-            else SELECTED_SLICES
-        )
-
         self.image_size = image_size
-
         self.cache_size = cache_size
 
         self.volume_cache = OrderedDict()
+
+        self.selected_slices = (
+            list(selected_slices)
+            if selected_slices is not None
+            else list(SELECTED_SLICES)
+        )
+
+        # ----------------------------------------------------
+        # Validate configuration
+        # ----------------------------------------------------
+
+        if not self.selected_slices:
+            raise ValueError(
+                "At least one slice must be selected."
+            )
+
+        if len(set(self.selected_slices)) != len(
+            self.selected_slices
+        ):
+            raise ValueError(
+                "Duplicate slice indices detected."
+            )
+
+        if any(
+            not isinstance(index, (int, np.integer))
+            or index < 0
+            for index in self.selected_slices
+        ):
+            raise ValueError(
+                "Slice indices must be non-negative integers."
+            )
+
+        if self.image_size <= 0:
+            raise ValueError(
+                "Image size must be greater than zero."
+            )
+
+        if self.cache_size < 0:
+            raise ValueError(
+                "Cache size cannot be negative."
+            )
+
+        # ----------------------------------------------------
+        # Load extraction report
+        # ----------------------------------------------------
 
         if not self.report_path.exists():
             raise FileNotFoundError(
                 f"Extraction report not found: {self.report_path}"
             )
 
-        self.report = pd.read_csv(
-            self.report_path
-        )
+        self.report = pd.read_csv(self.report_path)
 
         required_columns = [
             "participant_id",
@@ -211,10 +227,14 @@ class OASISSliceDataset(Dataset):
 
         if missing_columns:
             raise ValueError(
-                f"Missing columns in extraction report: {missing_columns}"
+                f"Missing columns in extraction report: "
+                f"{missing_columns}"
             )
 
-        # Keep only the requested split and successfully extracted volumes.
+        # ----------------------------------------------------
+        # Filter requested split
+        # ----------------------------------------------------
+
         self.report = self.report[
             (self.report["split"] == split)
             & (self.report["status"] == "PASSED")
@@ -224,6 +244,27 @@ class OASISSliceDataset(Dataset):
             raise ValueError(
                 f"No valid records found for split: {split}"
             )
+
+        # ----------------------------------------------------
+        # Validate metadata
+        # ----------------------------------------------------
+
+        if self.report[
+            ["participant_id", "session_id", "image_path"]
+        ].isnull().any().any():
+
+            raise ValueError(
+                f"Missing participant, session, or image path "
+                f"in {split} records."
+            )
+
+        self.report["participant_id"] = (
+            self.report["participant_id"].astype(str)
+        )
+
+        self.report["session_id"] = (
+            self.report["session_id"].astype(str)
+        )
 
         self.report["label"] = pd.to_numeric(
             self.report["label"],
@@ -235,7 +276,30 @@ class OASISSliceDataset(Dataset):
                 "Labels must contain only 0 and 1."
             )
 
-        # Expand each participant into individual slice records.
+        if self.report["participant_id"].duplicated().any():
+            raise ValueError(
+                f"Multiple records found for a participant "
+                f"in the {split} split."
+            )
+
+        # ----------------------------------------------------
+        # Validate label consistency
+        # ----------------------------------------------------
+
+        label_counts = (
+            self.report.groupby("participant_id")["label"]
+            .nunique()
+        )
+
+        if (label_counts > 1).any():
+            raise ValueError(
+                "Inconsistent labels found for participants."
+            )
+
+        # ----------------------------------------------------
+        # Expand participants into slice records
+        # ----------------------------------------------------
+
         self.samples = []
 
         for _, record in self.report.iterrows():
@@ -243,27 +307,45 @@ class OASISSliceDataset(Dataset):
             for slice_index in self.selected_slices:
 
                 self.samples.append({
-
                     "participant_id": record["participant_id"],
-
                     "session_id": record["session_id"],
-
                     "label": int(record["label"]),
-
                     "image_path": record["image_path"],
-
                     "slice_index": int(slice_index)
-
                 })
+
+        # ----------------------------------------------------
+        # Verify slice count per participant
+        # ----------------------------------------------------
+
+        slice_counts = Counter(
+            sample["participant_id"]
+            for sample in self.samples
+        )
+
+        expected_slices = len(self.selected_slices)
+
+        invalid_counts = {
+            participant: count
+            for participant, count in slice_counts.items()
+            if count != expected_slices
+        }
+
+        if invalid_counts:
+            raise ValueError(
+                "Unexpected slice count for participants: "
+                f"{invalid_counts}"
+            )
 
         print(
             f"{split.capitalize()} dataset initialized: "
-            f"{len(self.samples)} slices"
+            f"{len(self.samples)} slices from "
+            f"{len(self.report)} participants"
         )
 
-    # --------------------------------------------------------
+    # ========================================================
     # VOLUME CACHE
-    # --------------------------------------------------------
+    # ========================================================
 
     def get_volume(self, image_path):
 
@@ -271,19 +353,22 @@ class OASISSliceDataset(Dataset):
 
         if image_path in self.volume_cache:
 
-            self.volume_cache.move_to_end(
-                image_path
-            )
+            self.volume_cache.move_to_end(image_path)
 
             return self.volume_cache[image_path]
 
-        absolute_path = (
-            PROJECT_ROOT / image_path
-        )
+        absolute_path = PROJECT_ROOT / image_path
 
-        volume = load_mri_volume(
-            absolute_path
-        )
+        volume = load_mri_volume(absolute_path)
+
+        # Validate selected slice indices against volume depth.
+        if max(self.selected_slices) >= volume.shape[2]:
+
+            raise IndexError(
+                f"Selected slice index {max(self.selected_slices)} "
+                f"exceeds volume depth {volume.shape[2]} "
+                f"for {image_path}"
+            )
 
         if self.cache_size > 0:
 
@@ -291,28 +376,24 @@ class OASISSliceDataset(Dataset):
 
             if len(self.volume_cache) > self.cache_size:
 
-                self.volume_cache.popitem(
-                    last=False
-                )
+                self.volume_cache.popitem(last=False)
 
         return volume
 
-    # --------------------------------------------------------
+    # ========================================================
     # IMAGE PREPARATION
-    # --------------------------------------------------------
+    # ========================================================
 
     def prepare_slice(self, slice_data):
 
-        normalized = normalize_slice(
-            slice_data
-        )
+        normalized = normalize_slice(slice_data)
 
-        # Convert to PyTorch tensor: (1, H, W).
+        # Convert to tensor: (1, H, W).
         image = torch.from_numpy(
             normalized.copy()
         ).unsqueeze(0)
 
-        # Resize to the ResNet-compatible dimensions.
+        # Resize to 224 x 224.
         image = F.interpolate(
             image.unsqueeze(0),
             size=(
@@ -323,26 +404,22 @@ class OASISSliceDataset(Dataset):
             align_corners=False
         ).squeeze(0)
 
-        # ResNet-18 expects three input channels.
-        image = image.repeat(
-            3,
-            1,
-            1
-        )
+        # Convert grayscale to three channels for ResNet-18.
+        image = image.repeat(3, 1, 1)
 
         return image.float()
 
-    # --------------------------------------------------------
+    # ========================================================
     # DATASET LENGTH
-    # --------------------------------------------------------
+    # ========================================================
 
     def __len__(self):
 
         return len(self.samples)
 
-    # --------------------------------------------------------
+    # ========================================================
     # GET ITEM
-    # --------------------------------------------------------
+    # ========================================================
 
     def __getitem__(self, index):
 
@@ -354,27 +431,20 @@ class OASISSliceDataset(Dataset):
 
         slice_index = sample["slice_index"]
 
-        if slice_index >= volume.shape[2]:
-
-            raise IndexError(
-                f"Slice {slice_index} exceeds volume depth "
-                f"{volume.shape[2]} for "
-                f"{sample['participant_id']}"
-            )
-
         # Axis 2 is the axial slice axis in this project.
         slice_data = volume[:, :, slice_index]
 
-        image = self.prepare_slice(
-            slice_data
-        )
+        image = self.prepare_slice(slice_data)
 
         label = torch.tensor(
             sample["label"],
             dtype=torch.long
         )
 
-        return image, label
+        participant_id = sample["participant_id"]
+
+        # Return participant identity for participant-level evaluation.
+        return image, label, participant_id
 
 
 # ============================================================
@@ -442,7 +512,57 @@ def create_dataloaders():
 
 
 # ============================================================
-# DATASET VALIDATION
+# DATASET INTEGRITY VALIDATION
+# ============================================================
+
+def validate_dataset_integrity(dataset, split_name):
+
+    print(
+        f"\n========== {split_name.upper()} INTEGRITY CHECK =========="
+    )
+
+    participant_ids = dataset.report["participant_id"].tolist()
+
+    assert len(participant_ids) == len(set(participant_ids)), (
+        "Duplicate participant records detected."
+    )
+
+    expected_slices = len(dataset.selected_slices)
+
+    participant_slice_counts = Counter(
+        sample["participant_id"]
+        for sample in dataset.samples
+    )
+
+    assert all(
+        count == expected_slices
+        for count in participant_slice_counts.values()
+    ), "Unexpected number of slices per participant."
+
+    participant_labels = {}
+
+    for sample in dataset.samples:
+
+        participant_id = sample["participant_id"]
+        label = sample["label"]
+
+        if participant_id in participant_labels:
+
+            assert participant_labels[participant_id] == label, (
+                f"Inconsistent label for {participant_id}"
+            )
+
+        participant_labels[participant_id] = label
+
+    print("Unique participants:", len(participant_ids))
+    print("Slices per participant:", expected_slices)
+    print("Total samples:", len(dataset))
+    print("Participant labels: consistent")
+    print("Dataset integrity: PASSED")
+
+
+# ============================================================
+# BATCH VALIDATION
 # ============================================================
 
 def validate_batch(loader, split_name):
@@ -451,42 +571,19 @@ def validate_batch(loader, split_name):
         f"\n========== {split_name.upper()} BATCH VALIDATION =========="
     )
 
-    images, labels = next(iter(loader))
+    images, labels, participant_ids = next(iter(loader))
 
-    print(
-        "Image tensor shape:",
-        tuple(images.shape)
-    )
+    print("Image tensor shape:", tuple(images.shape))
+    print("Label tensor shape:", tuple(labels.shape))
+    print("Participant IDs in batch:", list(participant_ids))
 
-    print(
-        "Label tensor shape:",
-        tuple(labels.shape)
-    )
+    print("Image data type:", images.dtype)
+    print("Label data type:", labels.dtype)
 
-    print(
-        "Image data type:",
-        images.dtype
-    )
+    print("Minimum image intensity:", images.min().item())
+    print("Maximum image intensity:", images.max().item())
 
-    print(
-        "Label data type:",
-        labels.dtype
-    )
-
-    print(
-        "Minimum image intensity:",
-        images.min().item()
-    )
-
-    print(
-        "Maximum image intensity:",
-        images.max().item()
-    )
-
-    print(
-        "Labels in batch:",
-        torch.unique(labels).tolist()
-    )
+    print("Labels in batch:", torch.unique(labels).tolist())
 
     assert images.ndim == 4
     assert images.shape[1] == 3
@@ -494,17 +591,18 @@ def validate_batch(loader, split_name):
     assert images.shape[3] == IMAGE_SIZE
 
     assert labels.ndim == 1
+    assert len(participant_ids) == images.shape[0]
 
     assert torch.isfinite(images).all()
 
     assert images.min() >= 0
     assert images.max() <= 1
 
-    assert set(torch.unique(labels).tolist()).issubset({0, 1})
+    assert set(
+        torch.unique(labels).tolist()
+    ).issubset({0, 1})
 
-    print(
-        f"{split_name.capitalize()} batch validation PASSED."
-    )
+    print(f"{split_name.capitalize()} batch validation PASSED.")
 
 
 # ============================================================
@@ -514,20 +612,11 @@ def validate_batch(loader, split_name):
 def main():
 
     print("=" * 65)
-
     print("OASIS-1 PYTORCH DATASET VALIDATION")
-
     print("=" * 65)
 
-    print(
-        "\nPyTorch version:",
-        torch.__version__
-    )
-
-    print(
-        "CUDA available:",
-        torch.cuda.is_available()
-    )
+    print("\nPyTorch version:", torch.__version__)
+    print("CUDA available:", torch.cuda.is_available())
 
     if torch.cuda.is_available():
 
@@ -545,52 +634,37 @@ def main():
         test_loader
     ) = create_dataloaders()
 
+    # --------------------------------------------------------
+    # Dataset sizes
+    # --------------------------------------------------------
+
     print("\n========== DATASET SIZES ==========")
 
-    print(
-        "Training participants:",
-        train_dataset.report["participant_id"].nunique()
-    )
+    for name, dataset in [
+        ("Training", train_dataset),
+        ("Validation", validation_dataset),
+        ("Test", test_dataset)
+    ]:
 
-    print(
-        "Validation participants:",
-        validation_dataset.report["participant_id"].nunique()
-    )
+        print(
+            f"{name} participants:",
+            dataset.report["participant_id"].nunique()
+        )
 
-    print(
-        "Test participants:",
-        test_dataset.report["participant_id"].nunique()
-    )
+        print(
+            f"{name} slices:",
+            len(dataset)
+        )
 
-    print(
-        "Training slices:",
-        len(train_dataset)
-    )
+    print("\n========== DATALOADER SIZES ==========")
 
-    print(
-        "Validation slices:",
-        len(validation_dataset)
-    )
+    print("Training batches:", len(train_loader))
+    print("Validation batches:", len(validation_loader))
+    print("Test batches:", len(test_loader))
 
-    print(
-        "Test slices:",
-        len(test_dataset)
-    )
-
-    print(
-        "\nTraining batches:",
-        len(train_loader)
-    )
-
-    print(
-        "Validation batches:",
-        len(validation_loader)
-    )
-
-    print(
-        "Test batches:",
-        len(test_loader)
-    )
+    # --------------------------------------------------------
+    # Class distribution
+    # --------------------------------------------------------
 
     print("\n========== CLASS DISTRIBUTION ==========")
 
@@ -600,39 +674,68 @@ def main():
         ("Test", test_dataset)
     ]:
 
-        distribution = dataset.report["label"].value_counts().sort_index()
+        distribution = (
+            dataset.report["label"]
+            .value_counts()
+            .sort_index()
+        )
 
         print(f"\n{name}:")
 
-        print(
-            "Class 0:",
-            int(distribution.get(0, 0))
-        )
+        print("Class 0:", int(distribution.get(0, 0)))
+        print("Class 1:", int(distribution.get(1, 0)))
 
-        print(
-            "Class 1:",
-            int(distribution.get(1, 0))
-        )
+    # --------------------------------------------------------
+    # Integrity checks
+    # --------------------------------------------------------
 
-    validate_batch(
-        train_loader,
+    validate_dataset_integrity(
+        train_dataset,
         "train"
     )
 
-    validate_batch(
-        validation_loader,
+    validate_dataset_integrity(
+        validation_dataset,
         "validation"
     )
 
-    validate_batch(
-        test_loader,
+    validate_dataset_integrity(
+        test_dataset,
         "test"
     )
 
+    # --------------------------------------------------------
+    # Participant isolation check
+    # --------------------------------------------------------
+
+    train_ids = set(
+        train_dataset.report["participant_id"]
+    )
+
+    validation_ids = set(
+        validation_dataset.report["participant_id"]
+    )
+
+    test_ids = set(
+        test_dataset.report["participant_id"]
+    )
+
+    assert train_ids.isdisjoint(validation_ids)
+    assert train_ids.isdisjoint(test_ids)
+    assert validation_ids.isdisjoint(test_ids)
+
+    print("\nParticipant isolation: PASSED")
+
+    # --------------------------------------------------------
+    # Batch checks
+    # --------------------------------------------------------
+
+    validate_batch(train_loader, "train")
+    validate_batch(validation_loader, "validation")
+    validate_batch(test_loader, "test")
+
     print("\n" + "=" * 65)
-
     print("PYTORCH DATASET VALIDATION COMPLETED SUCCESSFULLY")
-
     print("=" * 65)
 
 
