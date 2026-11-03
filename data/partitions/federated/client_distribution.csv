@@ -1,0 +1,5 @@
+client_id,strategy,seed,dirichlet_alpha,participant_count,slice_count,CN_count,CDR_positive_count,CN_percentage,CDR_positive_percentage
+client_1,iid,42,,40,280,24,16,60.0,40.0
+client_2,iid,42,,41,287,25,16,60.98,39.02
+client_3,iid,42,,41,287,22,19,53.66,46.34
+client_4,iid,42,,42,294,23,19,54.76,45.24

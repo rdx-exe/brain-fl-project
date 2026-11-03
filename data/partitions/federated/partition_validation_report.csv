@@ -1,0 +1,8 @@
+check,value
+training_participants,164
+assigned_participants,164
+client_overlap_count,0
+held_out_overlap_count,0
+all_training_participants_assigned,True
+validation_test_excluded,True
+seven_slices_per_participant,True

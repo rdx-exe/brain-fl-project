@@ -1,24 +1,42 @@
 # Python
 __pycache__/
 *.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
 .venv/
+venv/
+env/
+
+# Jupyter
 .ipynb_checkpoints/
 
-# Environment
+# Environment variables and secrets
 .env
 .env.*
+!.env.example
 
-# Raw and processed medical data
+# MRI datasets
 data/raw/
 data/extracted/
-data/processed/
+data/oasis/
+*.nii
+*.nii.gz
+*.npy
 
-# Experiment outputs
-results/
-logs/
+# Model checkpoints and weights
 *.pth
 *.pt
 *.ckpt
+*.onnx
 
-# OS
+# Generated experiment outputs
+results/
+logs/
+checkpoints/
+backups/
+
+# Temporary files
+*.tmp
 .DS_Store
