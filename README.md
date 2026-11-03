@@ -1,21 +1,5 @@
-# Brain FL Project
+# FedCortex
 ### Privacy-Preserving Federated Learning for Alzheimer's Disease Classification Using Brain MRI
-
-<!--
-IMAGE PLACEHOLDER:
-File: docs/images/project-banner.png
-
-Required image:
-A research-themed banner containing:
-- Brain MRI visualization.
-- Federated client nodes.
-- Central aggregation server.
-- Privacy/security visual elements.
-
-Recommended dimensions: 1600 x 500 px.
-Source: Create an original graphic specifically for this project.
-Manual action: Create and save the image at the specified path.
--->
 
 ![Brain FL Project Banner](docs/images/project-banner.png)
 
@@ -24,7 +8,7 @@ This project explores the intersection of **Federated Learning (FL)**, **Differe
 ---
 
 ## 1. Abstract
-The Brain FL Project provides a reproducible research framework for training deep learning models on distributed medical MRI datasets while ensuring privacy and evaluating vulnerability to membership inference attacks. We benchmark:
+**FedCortex** provides a reproducible research framework for training deep learning models on distributed medical MRI datasets while ensuring privacy and evaluating vulnerability to membership inference attacks. We benchmark:
 - **Centralized training** (baseline)
 - **Federated learning (FedAvg)** (distributed training)
 - **Differential privacy (DP-SGD)** (privacy-preserving training)
@@ -51,16 +35,7 @@ The project uses the **OASIS-1** dataset, which consists of T1-weighted brain MR
   - Slice extraction (7 fixed axial slices).
   - Normalization (percentile clipping + scaling to [0,1]).
 
-<!--
-IMAGE PLACEHOLDER:
-File: docs/images/dataset-pipeline.png
 
-Required image:
-- MRI volume → preprocessing → slice extraction → resizing/normalization → participant-level manifest → train/validation/test partitions.
-
-Recommended dimensions: 1200 x 600 px.
-Manual action: Generate diagram and save to the specified path.
--->
 ![Dataset Pipeline](docs/images/dataset-pipeline.png)
 
 ---
@@ -81,16 +56,6 @@ graph TD
     Server --> Eval[Comparative Evaluation]
 ```
 
-<!--
-IMAGE PLACEHOLDER:
-File: docs/images/system-architecture.png
-
-Required image:
-- OASIS-1 MRI dataset, preprocessing, client partitioning, Flower server/FedAvg, DP, model evaluation, and MIA analysis.
-
-Recommended dimensions: 1400 x 700 px.
-Manual action: Create diagram and save to the specified path.
--->
 ![System Architecture](docs/images/system-architecture.png)
 
 ---
@@ -139,6 +104,3 @@ IMAGE PLACEHOLDER:
 
 ## 8. License and Disclaimer
 *This repository is intended for academic and research purposes only. Refer to the project's license file for usage conditions.*
-
----
-*Generated with [Claude Code](https://claude.com/claude-code)*
