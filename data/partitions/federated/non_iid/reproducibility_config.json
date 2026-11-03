@@ -1,0 +1,10 @@
+{
+  "strategy": "dirichlet",
+  "seed": 42,
+  "num_clients": 4,
+  "dirichlet_alpha": 0.3,
+  "min_client_participants": 10,
+  "participant_manifest": "/home/rdx/Documents/Projects/brain-fl-project/data/partitions/participant_splits.csv",
+  "slice_manifest": "/home/rdx/Documents/Projects/brain-fl-project/data/partitions/slice_manifest.csv",
+  "expected_slices_per_participant": 7
+}

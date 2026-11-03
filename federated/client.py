@@ -112,12 +112,15 @@ class OASISFlowerClient(fl.client.NumPyClient):
         optimizer = AdamW(self.model.parameters(), lr=self.config.learning_rate, weight_decay=self.config.weight_decay)
         total_loss = 0.0
         total_samples = 0
+        correct = 0
         for _ in range(self.config.local_epochs):
             for images, labels, _ in self.loader:
                 images = images.to(self.device, non_blocking=True)
                 labels = labels.to(self.device, non_blocking=True)
                 optimizer.zero_grad(set_to_none=True)
-                loss = criterion(self.model(images), labels)
+                logits = self.model(images)
+                loss = criterion(logits, labels)
+                correct += (logits.argmax(dim=1) == labels).sum().item()
                 loss.backward()
                 optimizer.step()
                 total_loss += loss.item() * images.size(0)
@@ -127,16 +130,18 @@ class OASISFlowerClient(fl.client.NumPyClient):
         train_loss = total_loss / total_samples
         self.config.output_dir.mkdir(parents=True, exist_ok=True)
         metrics_path = self.config.output_dir / f"client_{int(self.client_id) + 1}_training_metrics.csv"
+        train_accuracy = correct / total_samples
         metrics_row = pd.DataFrame([{
             "round": int(config.get("server_round", 0)),
             "client_id": f"client_{int(self.client_id) + 1}",
             "train_loss": float(train_loss),
+            "train_accuracy": float(train_accuracy),
             "participants": len(self.dataset.report),
             "slices": len(self.dataset),
         }])
         metrics_row.to_csv(metrics_path, mode="a", header=not metrics_path.exists(), index=False)
         LOGGER.info("Client %s completed local training: loss=%.5f", self.client_id, train_loss)
-        return _state_to_parameters(self.model), len(self.dataset), {"train_loss": float(train_loss), "participants": len(self.dataset.report)}
+        return _state_to_parameters(self.model), len(self.dataset), {"train_loss": float(train_loss), "train_accuracy": float(train_accuracy), "participants": len(self.dataset.report)}
 
     def evaluate(self, parameters, config):
         _parameters_to_state(self.model, parameters)

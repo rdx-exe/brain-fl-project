@@ -25,8 +25,9 @@ class FederatedConfig:
     pretrained: bool = False
     num_workers: int = 0
     partition_dir: Path = PROJECT_ROOT / "data" / "partitions" / "federated"
+    participant_manifest: Path = PROJECT_ROOT / "data" / "partitions" / "participant_splits.csv"
     extraction_report: Path = PROJECT_ROOT / "results" / "quality_control" / "extraction_report.csv"
-    output_dir: Path = PROJECT_ROOT / "results" / "federated"
+    output_dir: Path = PROJECT_ROOT / "results" / "federated" / "fedavg"
 
     def validate(self):
         if self.num_clients != 4:

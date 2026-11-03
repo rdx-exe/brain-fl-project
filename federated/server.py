@@ -1,6 +1,7 @@
 """FedAvg simulation server with centralized participant-level validation."""
 
 import logging
+import json
 import sys
 from pathlib import Path
 
@@ -46,8 +47,37 @@ class FederatedServer:
         self.output_dir = config.output_dir
         self.checkpoint_dir = self.output_dir / "checkpoints"
         self.checkpoint_dir.mkdir(parents=True, exist_ok=True)
-        self.history_path = self.output_dir / "global_validation_history.csv"
+        self.history_path = self.output_dir / "round_history.csv"
+        self.client_metrics_path = self.output_dir / "client_metrics.csv"
+        self._validate_client_manifests()
+        self._write_config()
         self.best_loss = float("inf")
+
+    def _validate_client_manifests(self):
+        client_sets = []
+        for client_number in range(1, self.config.num_clients + 1):
+            path = self.config.partition_dir / f"client_{client_number}.csv"
+            if not path.exists():
+                raise FileNotFoundError(f"Missing client partition: {path}")
+            frame = pd.read_csv(path)
+            if set(frame["split"].astype(str)) != {"train"}:
+                raise ValueError(f"Client {client_number} contains non-training participants.")
+            if frame["participant_id"].duplicated().any():
+                raise ValueError(f"Client {client_number} contains duplicate participants.")
+            client_sets.append(set(frame["participant_id"].astype(str)))
+            LOGGER.info("Client %s initialized: %d participants, %d slices", client_number, len(frame), len(frame) * 7)
+        overlap = set().union(*(client_sets[i] & client_sets[j] for i in range(4) for j in range(i + 1, 4)))
+        participant_manifest = pd.read_csv(self.config.participant_manifest)
+        train_ids = set(participant_manifest.loc[participant_manifest["split"] == "train", "participant_id"].astype(str))
+        assigned = set().union(*client_sets)
+        if overlap or assigned != train_ids:
+            raise ValueError(f"Client partition validation failed: overlap={len(overlap)}, missing={len(train_ids - assigned)}, extra={len(assigned - train_ids)}")
+        LOGGER.info("Client partition validation passed: 164 unique training participants, no leakage")
+
+    def _write_config(self):
+        config = {key: str(value) if isinstance(value, Path) else value for key, value in self.config.__dict__.items()}
+        config.update({"aggregation": "FedAvg", "flower_version": fl.__version__, "test_used_during_training": False})
+        (self.output_dir / "experiment_config.json").write_text(json.dumps(config, indent=2) + "\n")
 
     def evaluate(self, server_round: int, parameters, _config):
         _parameters_to_state(self.model, parameters)
@@ -67,6 +97,7 @@ class FederatedServer:
         if metrics["val_loss"] < self.best_loss:
             self.best_loss = metrics["val_loss"]
             torch.save(checkpoint, self.checkpoint_dir / "best_model.pth")
+            torch.save(checkpoint, self.output_dir / "best_global_model.pth")
         row = {"round": server_round, **metrics, "checkpoint": str(checkpoint_path)}
         pd.DataFrame([row]).to_csv(
             self.history_path,
@@ -97,6 +128,10 @@ def start_federated_simulation(config: FederatedConfig):
         evaluate_fn=server.evaluate,
         initial_parameters=initial_parameters,
         on_fit_config_fn=lambda server_round: {"server_round": server_round},
+        fit_metrics_aggregation_fn=lambda metrics: {
+            "train_loss": sum(count * values["train_loss"] for count, values in metrics) / sum(count for count, _ in metrics),
+            "participants": sum(values["participants"] for _, values in metrics),
+        },
     )
     return fl.simulation.start_simulation(
         client_fn=make_client,

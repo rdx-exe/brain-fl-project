@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420">
+<rect width="100%" height="100%" fill="white"/><text x="360.0" y="28" text-anchor="middle" font-size="20" font-weight="bold">Class distribution by client</text>
+<line x1="80" y1="345" x2="670" y2="345" stroke="#333"/>
+<line x1="80" y1="55" x2="80" y2="345" stroke="#333"/>
+<rect x="125.4" y="230.1" width="42.4" height="114.9" fill="#8ecae6"/>
+<text x="148.1" y="225.1" text-anchor="middle" font-size="11">21</text>
+<rect x="170.8" y="345.0" width="42.4" height="0.0" fill="#e76f51"/>
+<text x="193.5" y="340.0" text-anchor="middle" font-size="11">0</text>
+<rect x="261.5" y="82.4" width="42.4" height="262.6" fill="#8ecae6"/>
+<text x="284.2" y="77.4" text-anchor="middle" font-size="11">48</text>
+<rect x="306.9" y="262.9" width="42.4" height="82.1" fill="#e76f51"/>
+<text x="329.6" y="257.9" text-anchor="middle" font-size="11">15</text>
+<rect x="397.7" y="345.0" width="42.4" height="0.0" fill="#8ecae6"/>
+<text x="420.4" y="340.0" text-anchor="middle" font-size="11">0</text>
+<rect x="443.1" y="55.0" width="42.4" height="290.0" fill="#e76f51"/>
+<text x="465.8" y="50.0" text-anchor="middle" font-size="11">53</text>
+<rect x="533.8" y="208.2" width="42.4" height="136.8" fill="#8ecae6"/>
+<text x="556.5" y="203.2" text-anchor="middle" font-size="11">25</text>
+<rect x="579.2" y="334.1" width="42.4" height="10.9" fill="#e76f51"/>
+<text x="601.9" y="329.1" text-anchor="middle" font-size="11">2</text>
+<text x="170.8" y="375" text-anchor="middle" font-size="14">client_1</text>
+<text x="306.9" y="375" text-anchor="middle" font-size="14">client_2</text>
+<text x="443.1" y="375" text-anchor="middle" font-size="14">client_3</text>
+<text x="579.2" y="375" text-anchor="middle" font-size="14">client_4</text>
+<rect x="80" y="395" width="14" height="14" fill="#8ecae6"/><text x="100" y="407" font-size="12">CN</text>
+<rect x="230" y="395" width="14" height="14" fill="#e76f51"/><text x="250" y="407" font-size="12">CDR positive</text>
+</svg>

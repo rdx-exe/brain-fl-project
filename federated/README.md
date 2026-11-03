@@ -47,12 +47,15 @@ simulation reserves one GPU per virtual client when CUDA is available.
 
 ## Outputs
 
-The experiment writes to `results/federated/` by default:
+The experiment writes to `results/federated/fedavg/` by default:
 
 - `checkpoints/round_XXX.pth`: global model after each round.
 - `checkpoints/best_model.pth`: lowest global validation loss checkpoint.
-- `global_validation_history.csv`: participant-level validation metrics.
+- `round_history.csv`: participant-level global validation metrics by round.
 - `client_X_training_metrics.csv`: local loss, participant count, and slice count per client and round.
+- `client_metrics.csv`: consolidated local training metrics.
+- `test_metrics.csv`, `test_predictions.csv`: final participant-level test evaluation.
+- `confusion_matrix.svg`, `probability_distribution.svg`: evaluation plots.
 
 The centralized baseline checkpoint under `results/centralized/` is never read
 or overwritten. No test samples are loaded by the federated experiment.
