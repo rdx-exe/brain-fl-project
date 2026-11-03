@@ -24,12 +24,12 @@ LOGGER = logging.getLogger(__name__)
 
 
 class FederatedServer:
-    def __init__(self, config: FederatedConfig):
+    def __init__(self, config: FederatedConfig, model=None):
         self.config = config
         self.config.validate()
         set_seed(config.seed)
         self.device = get_device()
-        self.model = build_resnet18(num_classes=config.num_classes, pretrained=config.pretrained).to(self.device)
+        self.model = (model or build_resnet18(num_classes=config.num_classes, pretrained=config.pretrained)).to(self.device)
         validation_dataset = OASISSliceDataset(
             report_path=config.extraction_report,
             split="validation",

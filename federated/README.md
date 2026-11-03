@@ -59,3 +59,18 @@ The experiment writes to `results/federated/fedavg/` by default:
 
 The centralized baseline checkpoint under `results/centralized/` is never read
 or overwritten. No test samples are loaded by the federated experiment.
+
+## Participant-Level DP
+
+Review `PRIVACY_METHODOLOGY.md`, `DP_COMPATIBILITY_REPORT.md`, and
+`dp_experiment_config.json` before using the opt-in runner:
+
+```bash
+python3 federated/run_dp.py --rounds 5 --local-epochs 1 \
+  --noise-multiplier 1.0 --max-grad-norm 1.0 --delta 1e-5
+```
+
+The DP runner has not been used for the final OASIS experiment in this
+integration. It protects one participant containing all seven slices as one
+logical sample, uses Poisson participant sampling, and logs local epsilon/delta
+accounting. It does not provide secure aggregation or a central-model DP claim.

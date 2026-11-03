@@ -1,0 +1,11 @@
+{
+  "privacy_unit": "participant",
+  "noise_multiplier": 1.0,
+  "max_grad_norm": 1.0,
+  "delta": 0.00001,
+  "sampling": "poisson",
+  "accountant": "rdp",
+  "model_normalization": "GroupNorm replacing BatchNorm",
+  "final_experiment_run": false,
+  "requires_review_before_run": true
+}
