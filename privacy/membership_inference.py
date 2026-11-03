@@ -697,11 +697,12 @@ model.  The final-model MIA results therefore do not validate or invalidate the
 DP guarantee.  A server that observes individual client updates is outside the
 final-model threat model and is not covered by this attack.
 
-The DP target was trained with participant-level mean-logit aggregation, while
+The DP configuration specifies participant-level mean-logit aggregation, while
 the attack queries the project's slice-evaluation wrapper and aggregates slice
-probabilities.  The DP checkpoint's outputs are nearly constant, so both views
-are near chance, but the DP row is descriptive and not a precise estimate of a
-particular deployment interface.
+probabilities.  The saved DP checkpoint is a round-0 artifact with no completed
+training round, and its outputs are nearly constant, so both views are near
+chance.  The DP row is descriptive and not a precise estimate of a particular
+deployment interface.
 
 ## 7. What the results do and do not mean
 
@@ -714,8 +715,8 @@ particular deployment interface.
   an empirical measurement under this protocol, not a privacy proof.
 * DP may reduce membership signal, but a DP result on a model with near-chance
   utility is confounded by utility collapse.  The DP checkpoint in this
-  repository is a one-round, under-trained model; its attack result cannot be
-  attributed to DP alone.
+  repository is a round-0 artifact with no completed DP training round; its
+  attack result cannot be attributed to DP alone.
 * The non-member set is the validation split, which was also used for
   checkpoint selection in the centralized and federated runs.  Those
   participants are therefore *selection-exposed*, not perfectly held out.  This
@@ -900,9 +901,9 @@ The main findings are:
   (ROC-AUC approximately {_metric_or_na(comparison, 'federated', 'attack_roc_auc')}).
 * The DP checkpoint is near chance
   (ROC-AUC approximately {_metric_or_na(comparison, 'federated_dp', 'attack_roc_auc')});
-  however, this checkpoint is a one-round model with near-chance utility.  The
-  result is confounded by utility collapse and is **not** evidence that DP
-  prevents all membership inference.
+  however, this checkpoint is a round-0 artifact with no completed DP training
+  round and near-chance utility.  The result is confounded by utility collapse
+  and is **not** evidence that DP prevents all membership inference.
 * Raw accuracy is misleading under the approximately 82% member prevalence.  The
   class-balanced attack and TPR-FPR advantage are the primary comparisons.
 
@@ -995,14 +996,15 @@ provided for context only; the attack does not use them for fitting.
 {utility_table}
 
 The centralized and FedAvg models have modest diagnostic utility.  The DP
-checkpoint is a one-round, under-trained model with near-chance validation
-utility, so its near-chance MIA result is confounded by utility collapse.  Its
-participant probabilities are nearly constant (mean approximately 0.77 for both
-members and non-members), leaving almost no confidence variation for the attack
-to exploit.  The available DP artifacts do not record epsilon; the DP
-configuration is participant-level local DP-SGD with noise multiplier 0.5, max
-gradient norm 1.0, delta 1e-5, one round, and one local epoch.  No formal
-end-to-end DP claim is made here.
+artifact is a round-0 checkpoint: only the initial global model was saved, with
+no post-training round-1 checkpoint and no client DP metric files.  It has
+near-chance validation utility, so its near-chance MIA result is confounded by
+utility collapse.  Its participant probabilities are nearly constant (mean
+approximately 0.77 for both members and non-members), leaving almost no
+confidence variation for the attack to exploit.  The available DP artifacts do
+not record epsilon; the DP configuration is participant-level local DP-SGD with
+noise multiplier 0.5, max gradient norm 1.0, delta 1e-5, one configured round,
+and one local epoch.  No formal end-to-end DP claim is made here.
 
 ## 7. Main results
 
@@ -1012,9 +1014,10 @@ end-to-end DP claim is made here.
 separable: members are usually predicted with high confidence in either class,
 while non-members are closer to the decision boundary.  The FedAvg model
 preserves some of this signal, but substantially less.  The DP row is close to
-chance, but the DP model itself has near-chance validation utility, so the row
-primarily demonstrates that an under-trained model provides little membership
-signal; it is not a clean DP-vs-non-DP causal comparison.
+chance, but the DP artifact itself has near-chance validation utility and no
+completed training round, so the row primarily demonstrates that an incomplete
+round-0 artifact provides little membership signal; it is not a clean
+DP-vs-non-DP causal comparison.
 
 Raw accuracy must be read against the majority baseline.  For example, an
 accuracy of 0.82 with 82% members is exactly the trivial all-member baseline.
@@ -1107,13 +1110,14 @@ level.
    variant models an attacker who also knows the diagnosis.  It uses more
    information but does not improve every measured metric on this finite sample,
    so it is reported only as a sensitivity check.
-6. **DP confound.** The DP checkpoint is a one-round, under-trained model with
-   near-chance validation utility and nearly constant participant probabilities.
-   Its near-chance MIA result cannot be attributed to DP alone, and no epsilon
-   value was recorded in the available artifacts.  The DP model was also trained
-   with mean-logit aggregation, while the attack queries slice probabilities
-   through the project's DP evaluation wrapper; this interface difference is a
-   further reason to treat the DP row as descriptive only.
+6. **DP confound.** The DP checkpoint is a round-0 artifact with no completed
+   DP training round, near-chance validation utility, and nearly constant
+   participant probabilities.  Its near-chance MIA result cannot be attributed
+   to DP alone, and no epsilon value was recorded in the available artifacts.
+   The DP configuration specifies mean-logit aggregation, while the attack
+   queries slice probabilities through the project's DP evaluation wrapper;
+   this interface difference is a further reason to treat the DP row as
+   descriptive only.
 7. **No client-update evaluation.** The server-side update attack is documented
    but not measured because updates were not retained.
 8. **No causal claim about FedAvg.** Federated learning changes optimization,
